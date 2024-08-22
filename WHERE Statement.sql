@@ -19,3 +19,10 @@ WHERE gender = 'Female';
 SELECT *
 FROM employee_demographics
 WHERE gender != 'Female';
+
+-- We can use WHERE clause with date value also
+SELECT *
+FROM employee_demographics
+WHERE birth_date > '1985-01-01';
+-- The default date format in SQL is YYYY-MM-DD
+-- There are other date formats as well
