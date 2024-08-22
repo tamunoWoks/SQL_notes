@@ -33,3 +33,20 @@ WHERE first_name LIKE 'A_';
 SELECT *
 FROM employee_demographics
 WHERE first_name LIKE 'T_Z';
+
+
+-- WE can combine both wildcards
+-- Match values where the second character is "B":
+SELECT *
+FROM employee_demographics
+WHERE first_name LIKE '_B%';
+
+-- Match any value where the fourth character is "X":
+SELECT *
+FROM employee_demographics
+WHERE first_name LIKE '___X%';
+
+-- Match any value where the second and third characters are digits:
+SELECT *
+FROM employee_demographics
+WHERE birth_date LIKE '_98%';
