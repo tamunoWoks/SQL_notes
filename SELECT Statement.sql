@@ -7,3 +7,7 @@
 SELECT column1, column2, ...
 FROM table_name
 WHERE condition;
+
+-- Selecting all columns:
+SELECT * 
+FROM parks_and_recreation.employee_demographics;
