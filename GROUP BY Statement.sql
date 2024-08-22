@@ -31,3 +31,9 @@ SELECT first_name
 FROM employee_demographics
 GROUP BY gender;
 -- This will fail as the gender column isn't in the SELECT statement
+
+
+-- when we GROUP BY 2 columns we now have a row for both columns as they are both different
+SELECT occupation, salary
+FROM employee_salary
+GROUP BY occupation, salary;
