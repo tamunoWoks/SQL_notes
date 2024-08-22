@@ -37,3 +37,8 @@ GROUP BY gender;
 SELECT occupation, salary
 FROM employee_salary
 GROUP BY occupation, salary;
+
+
+-- NOTE
+-- Any column in the SELECT list that is not used in an aggregate function must be included in the GROUP BY clause.
+-- The GROUP BY clause must come after any WHERE clause and before any ORDER BY clause.
