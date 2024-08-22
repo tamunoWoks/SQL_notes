@@ -11,3 +11,11 @@ WHERE condition;
 -- Selecting all columns:
 SELECT * 
 FROM parks_and_recreation.employee_demographics;
+
+-- Selecting a specific column:
+SELECT first_name
+FROM employee_demographics;
+
+-- Selecting multiple specific columns:
+SELECT first_name, last_name
+FROM employee_demographics;
