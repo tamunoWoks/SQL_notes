@@ -29,3 +29,7 @@ FROM parks_and_recreation.employee_demographics;
 SELECT first_name, last_name, age, (age +10) * 2
 FROM parks_and_recreation.employee_demographics;
 
+-- Using DISTINCT:
+-- DISTINCT retrieves unique values and remove duplicates.
+SELECT DISTINCT department_id
+FROM parks_and_recreation.employee_salary;
