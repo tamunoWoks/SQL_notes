@@ -22,3 +22,11 @@ GROUP BY gender;
 SELECT e_d.gender, e_d.age
 FROM employee_demographics AS e_d
 GROUP BY e_d.gender;
+
+
+-- NOTE 
+-- The 'AS' keyword is optional in SQL
+SELECT gender, AVG(age) avg_age
+FROM employee_demographics
+GROUP BY gender;
+-- This is also valid, however it is advisable to use the 'AS' keyword for clarity
