@@ -24,3 +24,10 @@ FROM employee_demographics
 ORDER BY first_name
 LIMIT 3, 2;
 -- This says start at position 3 and take 2 rows after that
+
+
+-- Select the third oldest person by doing this:
+SELECT *
+FROM employee_demograpics
+ORDER BY first_name
+LIMIT 2, 1
