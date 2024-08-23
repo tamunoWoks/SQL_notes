@@ -13,3 +13,10 @@ ORDER BY column1 [ASC|DESC], column2 [ASC|DESC], ...;
 SELECT *
 FROM customers
 ORDER BY first_name;
+-- if we use order by it goes a to z by default (ascending order)
+
+-- we can manually change the order by saying desc
+SELECT *
+FROM customers
+ORDER BY first_name DESC;
+
