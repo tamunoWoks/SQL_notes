@@ -8,6 +8,7 @@ SELECT column1, column2, ...
 FROM table_name
 ORDER BY column1 [ASC|DESC], column2 [ASC|DESC], ...;
 
+
 -- Examples
 -- ORDER BY one column
 SELECT *
@@ -20,6 +21,7 @@ SELECT *
 FROM employee_demographics
 ORDER BY first_name DESC;
 
+
 -- ORDER BY multiple columns
 SELECT *
 FROM employee_demographics
@@ -28,3 +30,11 @@ ORDER BY gender, age;
 SELECT *
 FROM employee_demographics
 ORDER BY gender DESC, age DESC
+
+
+-- ORDER BY column position
+-- We don't have to spell out the column names. We can actually just use their column position
+SELECT *
+FROM employee_demographics
+ORDER BY 5 DESC, 4 DESC
+-- gender is the 5th column while age is the 4th column in the employee_demo graphics table
