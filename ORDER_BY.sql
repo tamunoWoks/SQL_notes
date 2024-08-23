@@ -32,6 +32,13 @@ FROM employee_demographics
 ORDER BY gender DESC, age DESC
 
 
+-- Ordering by Non-Selected Columns
+SELECT first_name, age
+FROM employee_demographics
+ORDER BY gender;
+-- Even though the gender column is not selected, you can still order the results by it.
+
+
 -- ORDER BY column position
 -- We don't have to spell out the column names. We can actually just use their column position
 SELECT *
