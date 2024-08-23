@@ -31,3 +31,12 @@ SELECT *
 FROM employee_demograpics
 ORDER BY first_name
 LIMIT 2, 1
+
+
+-- Using OFFSET with LIMIT:
+-- You can also use the OFFSET clause in combination with LIMIT to skip a certain number of rows before returning the specified number of rows.
+SELECT *
+FROM employee_demographics
+ORDER BY first_name
+LIMIT 3 OFFSET 2;
+-- This will skip the first 3 rows and then return the next 2 rows from the employee_demographics table.
