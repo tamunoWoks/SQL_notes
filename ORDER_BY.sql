@@ -16,7 +16,7 @@ FROM customers
 ORDER BY first_name;
 -- if we use order by it goes a to z by default (ascending order)
 
--- we can manually change the order by saying desc
+-- We can manually change the order by saying desc
 SELECT *
 FROM employee_demographics
 ORDER BY first_name DESC;
@@ -38,3 +38,8 @@ SELECT *
 FROM employee_demographics
 ORDER BY 5 DESC, 4 DESC
 -- gender is the 5th column while age is the 4th column in the employee_demo graphics table
+
+
+-- NOTE
+-- It is best practice to use the column names as it's more overt.
+-- If columns are added or replaced in a table, to ORDER BY column position can mess up the order.
