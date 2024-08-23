@@ -40,3 +40,7 @@ FROM employee_demographics
 ORDER BY first_name
 LIMIT 3 OFFSET 2;
 -- This will skip the first 3 rows and then return the next 2 rows from the employee_demographics table.
+
+
+--NOTE
+-- Different SQL databases may have slight variations in syntax (e.g., MySQL, PostgreSQL, SQLite all use LIMIT, while SQL Server uses TOP).
