@@ -14,3 +14,4 @@ SELECT *
 FROM employee_demographics
 ORDER BY first_name
 LIMIT 3;
+-- This query will return the first 3 rows from the employee_demographic table in by first name in ascending order.
