@@ -7,3 +7,10 @@
 SELECT column1, column2
 FROM table_name
 LIMIT number_of_rows;
+
+
+-- EXAMPLE
+SELECT *
+FROM employee_demographics
+ORDER BY first_name
+LIMIT 3;
