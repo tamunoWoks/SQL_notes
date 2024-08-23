@@ -43,9 +43,16 @@ ORDER BY gender;
 -- We don't have to spell out the column names. We can actually just use their column position
 SELECT *
 FROM employee_demographics
-ORDER BY 5 DESC, 4 DESC
+ORDER BY 5 DESC, 4 DESC;
 -- gender is the 5th column while age is the 4th column in the employee_demo graphics table
 
+
+-- Ordering with NULL Values
+-- In databases like PostgreSQL, you can specify whether NULL values should be placed first or last when ordering.
+SELECT *
+FROM employee_demographics
+ORDER BY age DESC NULLS LAST
+-- There is no comma between ASC and NULLS LAST because they are part of the same sorting expression.
 
 -- NOTE
 -- It is best practice to use the column names as it's more overt.
