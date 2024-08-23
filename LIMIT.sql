@@ -30,7 +30,9 @@ LIMIT 3, 2;
 SELECT *
 FROM employee_demograpics
 ORDER BY first_name
-LIMIT 2, 1
+LIMIT 2, 1;
+-- This will ignore the first 2 entries and return only 1 entry after the ignored 2.
+
 
 
 -- Using OFFSET with LIMIT:
@@ -38,8 +40,8 @@ LIMIT 2, 1
 SELECT *
 FROM employee_demographics
 ORDER BY first_name
-LIMIT 3 OFFSET 2;
--- This will skip the first 3 rows and then return the next 2 rows from the employee_demographics table.
+LIMIT 1 OFFSET 2;
+-- This will skip the first 2 rows and then return the next 1 rows from the employee_demographics table.
 
 
 --NOTE
