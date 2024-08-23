@@ -17,6 +17,14 @@ ORDER BY first_name;
 
 -- we can manually change the order by saying desc
 SELECT *
-FROM customers
+FROM employee_demographics
 ORDER BY first_name DESC;
 
+-- ORDER BY multiple columns
+SELECT *
+FROM employee_demographics
+ORDER BY gender, age;
+
+SELECT *
+FROM employee_demographics
+ORDER BY gender DESC, age DESC
