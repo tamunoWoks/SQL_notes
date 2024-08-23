@@ -7,3 +7,10 @@
 -- SYNTAX
 SELECT column_name AS alias_name
 FROM table_name
+
+
+-- Column Aliasing
+-- Column aliasing is used to rename the result set's column for better clarity.
+SELECT gender, AVG(age) AS avg_age
+FROM employee_demographics
+GROUP BY gender;
