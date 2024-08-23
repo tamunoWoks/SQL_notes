@@ -1,2 +1,2 @@
 # SQL_notes
-These are my SQL notes taken while learning to use SQL
+These are my SQL lesson notes used in teaching SQL to a few young tech enthusiasts.
