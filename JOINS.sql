@@ -9,3 +9,12 @@ FROM table1
 JOIN table2
 ON table1.common_column = table2.common_column;
 
+-- There are several types of JOINS
+
+
+--1. INNER JOIN 
+-- This returns records that have matching values in both tables.  If there is no match, the rows are excluded from the result.
+SELECT *
+FROM employee_demographics AS dem
+INNER JOIN employee_salary As sal
+  ON dem.employee.id = sal.employee.id
