@@ -16,5 +16,11 @@ ON table1.common_column = table2.common_column;
 -- This returns records that have matching values in both tables.  If there is no match, the rows are excluded from the result.
 SELECT *
 FROM employee_demographics AS dem
-INNER JOIN employee_salary As sal
+INNER JOIN employee_salary AS sal
+  ON dem.employee.id = sal.employee.id
+
+-- In INNER JOINS, the INNER can be omitted in the keyword and it will still work:
+SELECT *
+FROM employee_demographics AS dem
+JOIN employee_salary AS sal
   ON dem.employee.id = sal.employee.id
