@@ -24,3 +24,8 @@ SELECT *
 FROM employee_demographics AS dem
 JOIN employee_salary AS sal
   ON dem.employee.id = sal.employee.id
+
+
+--2. OUTER JOIN
+-- An OUTER JOIN in SQL is used to combine rows from two or more tables based on a related column between them, even if there are no matches in one of the tables. 
+-- There are three main types of OUTER JOINs:
