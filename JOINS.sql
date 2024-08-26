@@ -45,3 +45,18 @@ SELECT *
 FROM employee_salary AS sal
 RIGHT JOIN employee_demographic AS dem
   ON sal.employee_id = dem.employee_id;
+
+-- FULL OUTER JOIN
+-- Returns all records when there is a match in either the left or right table. Records that have no match will show NULL for columns from the other table.
+SELECT * 
+FROM employee_salary AS sal
+FULL OUTER JOIN employee_demographic AS dem
+  ON sal.employee_id = dem.employee_id;
+
+
+-- 3. SELF JOIN
+-- A SELF JOIN in SQL is a join where a table is joined with itself. This is typically used when you want to compare rows within the same table.
+SELECT emp1.employee_is AS emp_super, emp1.first_name as super_first_name, emp1.last_name as super_last_name, emp2.employee_id, emp2.first_name, emp2.last_name
+FROM employee_salary AS emp1
+JOIN employee_salary AS emp2
+  ON emp1.employee_id + 1 = emp2.employee_id;
