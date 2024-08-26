@@ -70,3 +70,14 @@ SELECT *
 FROM employee_demographics
 CROSS JOIN employee_salary;
 -- The CROSS JOIN multiplies the number of rows in the first table by the number of rows in the second table, which is why it's also called the Cartesian product.
+
+
+-- 5. JOINING MULTIPLE TABLES
+-- Joining multiple tables is a common operation in SQL when you need to combine data from different tables based on related columns.
+SELECT *
+FROM employee_demographics AS dem
+INNER JOIN employee_salary AS sal
+  ON dem.employee_id = sal.employee_id
+JOIN parks_departments AS dept
+  ON dept.department_id = sal.dept_id;
+
