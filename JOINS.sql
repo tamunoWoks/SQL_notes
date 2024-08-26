@@ -81,3 +81,18 @@ INNER JOIN employee_salary AS sal
 JOIN parks_departments AS dept
   ON dept.department_id = sal.dept_id;
 
+-- We can operate all types of joins when joining multiple tables
+--Example
+SELECT *
+FROM employee_demographics AS dem
+INNER JOIN employee_salary AS sal
+  ON dem.employee_id = sal.employee_id
+LEFT JOIN parks_departments AS dept
+  ON dept.department_id = sal.dept_id;
+
+SELECT *
+FROM employee_demographics AS dem
+INNER JOIN employee_salary AS sal
+  ON dem.employee_id = sal.employee_id
+RIGHT JOIN parks_departments AS dept
+  ON dept.department_id = sal.dept_id;
