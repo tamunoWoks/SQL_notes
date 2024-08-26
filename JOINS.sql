@@ -31,9 +31,17 @@ JOIN employee_salary AS sal
 -- There are three main types of OUTER JOINs:
 
 -- LEFT OUTER JOIN (LEFT JOIN)
--- As the above title implies, it can be written as LEFT OUTER JOIN or LEFT JOI
+-- As the above title implies, it can be written as LEFT OUTER JOIN or LEFT JOIN
 -- Returns all records from the left table and the matched records from the right table. If there is no match, the result is NULL on the side of the right table.
 SELECT *
 FROM employee_salary AS sal
 LEFT JOIN employee_demographic AS dem
+  ON sal.employee_id = dem.employee_id;
+
+-- RIGHT OUTER JOIN (RIGHT JOIN)
+-- As the above title implies, it can be written as RIGHT OUTER JOIN or RIGHT JOIN
+-- Returns all records from the right table and the matched records from the left table. If there is no match, the result is NULL on the side of the left table.
+SELECT *
+FROM employee_salary AS sal
+RIGHT JOIN employee_demographic AS dem
   ON sal.employee_id = dem.employee_id;
