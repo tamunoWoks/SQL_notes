@@ -60,3 +60,9 @@ SELECT emp1.employee_is AS emp_super, emp1.first_name as super_first_name, emp1.
 FROM employee_salary AS emp1
 JOIN employee_salary AS emp2
   ON emp1.employee_id + 1 = emp2.employee_id;
+
+
+-- 4. CROSS JOIN
+-- In SQL, a CROSS JOIN is a type of join that returns the Cartesian product of two tables. 
+-- This means that it combines every row from the first table with every row from the second table. 
+-- The result set contains every possible combination of rows from the two tables.
