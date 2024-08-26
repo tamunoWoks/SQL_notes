@@ -25,3 +25,7 @@ FROM employee_salary
 WHERE salary >= 70000
 ORDER BY first_name
 
+-- NOTE
+-- All SELECT statements must have the same number of columns.
+-- The columns in the corresponding positions of the SELECT statements must have similar data types.
+-- ORDER BY is applied only at the end of the combined query (after the last SELECT statement).
