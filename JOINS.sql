@@ -66,3 +66,7 @@ JOIN employee_salary AS emp2
 -- In SQL, a CROSS JOIN is a type of join that returns the Cartesian product of two tables. 
 -- This means that it combines every row from the first table with every row from the second table. 
 -- The result set contains every possible combination of rows from the two tables.
+SELECT *
+FROM employee_demographics
+CROSS JOIN employee_salary;
+-- The CROSS JOIN multiplies the number of rows in the first table by the number of rows in the second table, which is why it's also called the Cartesian product.
