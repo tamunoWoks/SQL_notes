@@ -72,3 +72,9 @@ SELECT FORMAT(GETDATE(), 'yyyy-MM-dd') AS FormattedDate;  -- SQL Server
 -- Not available in MySQL, but similar functionality can be achieved with DATE_FORMAT
 SELECT DATE_FORMAT(NOW(), '%Y-%m-%d') AS FormattedDate;  -- MySQL
 -- Output: '2024-08-26'
+
+
+-- 10. REVERSE()
+-- Reverses the order of characters in a string.
+SELECT REVERSE('Hello World') AS ReversedString;
+-- Output: 'dlroW olleH'
