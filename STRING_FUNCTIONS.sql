@@ -14,3 +14,9 @@ SELECT TRIM('   Hello World   ') AS TrimmedString;
 -- Removes leading spaces from a string.
 SELECT LTRIM('   Hello World') AS LTrimmedString;
 -- Output: 'Hello World'
+
+
+-- 3. RTRIM
+-- Removes trailing spaces from a string.
+SELECT RTRIM('Hello World   ') AS RTrimmedString;
+-- Output: 'Hello World'
