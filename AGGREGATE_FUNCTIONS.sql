@@ -48,3 +48,9 @@ SELECT STDDEV(salary) AS age_std_dev
 FROM employee_salary;
 -- Standard deviation measures the amount of variation or dispersion in a set of values. 
 -- It represents how spread out the data points are from the mean, and it is the square root of the variance.
+
+-- 9. GROUP_CONCAT()
+-- Concatenates values from multiple rows into a single string (MySQL specific).
+SELECT GROUP_CONCAT(salary) AS sal
+FROM employee.salary
+WHERE salary = 70000
