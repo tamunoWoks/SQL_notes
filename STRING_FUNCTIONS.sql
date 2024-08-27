@@ -62,3 +62,13 @@ SELECT CONCAT('Hello', ' ', 'World') AS ConcatenatedString;  -- MySQL, PostgreSQ
 
 SELECT 'Hello' + ' ' + 'World' AS ConcatenatedString;  -- SQL Server
 -- Output: 'Hello World'
+
+
+-- 9. FORMAT()
+-- Formats a string according to a specified format.
+SELECT FORMAT(GETDATE(), 'yyyy-MM-dd') AS FormattedDate;  -- SQL Server
+-- Output: '2024-08-26'
+
+-- Not available in MySQL, but similar functionality can be achieved with DATE_FORMAT
+SELECT DATE_FORMAT(NOW(), '%Y-%m-%d') AS FormattedDate;  -- MySQL
+-- Output: '2024-08-26'
