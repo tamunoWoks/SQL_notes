@@ -14,10 +14,18 @@ SELECT UPPER('hello world') AS UppercaseString;
 SELECT LOWER('HELLO WORLD') AS LowercaseString;
 -- Output: 'hello world'
 
--- 3. LEN()/LENGTH()
+-- 3. LEN() / LENGTH()
 -- Returns the length of a string. The function name can vary by SQL database.
 SELECT LEN('Hello') AS StringLength;  -- SQL Server
 -- Output: 5
 
 SELECT LENGTH('Hello') AS StringLength;  -- MySQL, PostgreSQL
 -- Output: 5
+
+-- 4. SUBSTRING() / SUBSTR()
+-- Extracts a substring from a string.
+SELECT SUBSTRING('Hello World', 1, 5) AS Substring;  -- SQL Server
+-- Output: 'Hello'
+
+SELECT SUBSTR('Hello World', 1, 5) AS Substring;  -- Oracle, MySQL
+-- Output: 'Hello'
