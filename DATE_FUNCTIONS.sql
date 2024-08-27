@@ -30,8 +30,10 @@ SELECT DATE('2024-08-27 14:23:55') AS date_part;
 SELECT DATE_ADD('2024-08-27', INTERVAL 7 DAY) AS next_week;
 -- Output: 2024-09-03
 
-
--- Output: 
+-- 6. DATE_SUB()
+-- Subtracts a time/date interval from a date
+SELECT DATE_SUB('2024-08-27', INTERVAL 7 DAY) AS last_week;
+-- Output: 2024-08-20
 
 
 -- Output: 
