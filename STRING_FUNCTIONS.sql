@@ -108,3 +108,9 @@ SELECT INITCAP('hello world from sql') AS CapitalizedString;  -- Oracle, Postgre
 -- Pads the left side of a string with a specified set of characters.
 SELECT LPAD('SQL', 5, '*') AS PaddedString;  -- Oracle, MySQL, PostgreSQL
 -- Output: '**SQL'
+
+
+-- 16. RPAD()
+-- Pads the right side of a string with a specified set of characters.
+SELECT RPAD('SQL', 5, '*') AS PaddedString;  -- Oracle, MySQL, PostgreSQL
+-- Output: 'SQL**'
