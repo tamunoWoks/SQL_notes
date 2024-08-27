@@ -132,3 +132,9 @@ SELECT REGEXP_REPLACE('123-456-7890', '\d', '*') AS MaskedNumber;  -- Oracle, Po
 -- Extracts a substring from a string using a regular expression pattern.
 SELECT REGEXP_SUBSTR('123 Main St, Suite 100', '\d+') AS ExtractedNumber;  -- Oracle, PostgreSQL, MySQL
 -- Output: '123'
+
+
+-- 20. REPEAT()
+-- Repeats a string a specified number of times.
+SELECT REPEAT('SQL', 3) AS RepeatedString;  -- MySQL, PostgreSQL
+-- Output: 'SQLSQLSQL'
