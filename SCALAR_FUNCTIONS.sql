@@ -8,3 +8,8 @@
 -- Converts a string to uppercase.
 SELECT UPPER('hello world') AS UppercaseString;
 -- Output: 'HELLO WORLD'
+
+-- 2. LOWER()
+-- Converts a string to lowercase.
+SELECT LOWER('HELLO WORLD') AS LowercaseString;
+-- Output: 'hello world'
