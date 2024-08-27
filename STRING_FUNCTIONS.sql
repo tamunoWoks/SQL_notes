@@ -114,3 +114,9 @@ SELECT LPAD('SQL', 5, '*') AS PaddedString;  -- Oracle, MySQL, PostgreSQL
 -- Pads the right side of a string with a specified set of characters.
 SELECT RPAD('SQL', 5, '*') AS PaddedString;  -- Oracle, MySQL, PostgreSQL
 -- Output: 'SQL**'
+
+
+-- 17. TRANSLATE()
+-- Replaces each character in a string with another set of characters (character-by-character replacement).
+SELECT TRANSLATE('SQL', 'SQ', 'XY') AS TranslatedString;  -- Oracle, PostgreSQL
+-- Output: 'XYL'
