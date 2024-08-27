@@ -120,3 +120,9 @@ SELECT RPAD('SQL', 5, '*') AS PaddedString;  -- Oracle, MySQL, PostgreSQL
 -- Replaces each character in a string with another set of characters (character-by-character replacement).
 SELECT TRANSLATE('SQL', 'SQ', 'XY') AS TranslatedString;  -- Oracle, PostgreSQL
 -- Output: 'XYL'
+
+
+-- 18. REGEXP_REPLACE()
+-- Replaces substrings that match a regular expression pattern with another substring.
+SELECT REGEXP_REPLACE('123-456-7890', '\d', '*') AS MaskedNumber;  -- Oracle, PostgreSQL, MySQL
+-- Output: '***-***-****'
