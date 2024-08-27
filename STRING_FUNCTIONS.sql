@@ -93,7 +93,7 @@ FROM employee_demographics;
 
 
 -- 13. INSTR()
--- Finds the position of a substring within a string (similar to CHARINDEX).
+-- Returns the first position of a substring within a string (similar to CHARINDEX).
 SELECT INSTR('Hello World', 'World') AS Position;  -- MySQL
 -- Output: 7
 
@@ -138,3 +138,9 @@ SELECT REGEXP_SUBSTR('123 Main St, Suite 100', '\d+') AS ExtractedNumber;  -- Or
 -- Repeats a string a specified number of times.
 SELECT REPEAT('SQL', 3) AS RepeatedString;  -- MySQL, PostgreSQL
 -- Output: 'SQLSQLSQL'
+
+
+-- 21. SPACE()
+-- Generates a string of spaces of a specified length.
+SELECT 'SQL' + SPACE(3) + 'Server' AS PaddedString;  -- SQL Server
+-- Output: 'SQL   Server'
