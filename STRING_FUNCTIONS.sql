@@ -150,3 +150,9 @@ SELECT 'SQL' + SPACE(3) + 'Server' AS PaddedString;  -- SQL Server
 -- Returns the ASCII code of the first character of a string.
 SELECT ASCII('A') AS AsciiValue;  -- MySQL, SQL Server, Oracle
 -- Output: 65
+
+
+-- 23. CHAR()
+-- Converts an ASCII code into a character.
+SELECT CHAR(65) AS CharacterValue;  -- MySQL, SQL Server, Oracle
+-- Output: 'A'
