@@ -13,3 +13,11 @@ SELECT UPPER('hello world') AS UppercaseString;
 -- Converts a string to lowercase.
 SELECT LOWER('HELLO WORLD') AS LowercaseString;
 -- Output: 'hello world'
+
+-- 3. LEN()/LENGTH()
+-- Returns the length of a string. The function name can vary by SQL database.
+SELECT LEN('Hello') AS StringLength;  -- SQL Server
+-- Output: 5
+
+SELECT LENGTH('Hello') AS StringLength;  -- MySQL, PostgreSQL
+-- Output: 5
