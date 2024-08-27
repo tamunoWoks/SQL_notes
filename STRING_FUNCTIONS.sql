@@ -156,3 +156,10 @@ SELECT ASCII('A') AS AsciiValue;  -- MySQL, SQL Server, Oracle
 -- Converts an ASCII code into a character.
 SELECT CHAR(65) AS CharacterValue;  -- MySQL, SQL Server, Oracle
 -- Output: 'A'
+
+
+-- 24. LOCATE()
+-- Used to find the position of a substring within a string. 
+-- It returns the position (starting from 1) where the substring first occurs in the string. If the substring is not found, it returns 0.
+SELECT LOCATE('world', 'Hello world!'); -- Returns 7
+
