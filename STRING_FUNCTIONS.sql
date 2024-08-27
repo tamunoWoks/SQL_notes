@@ -87,6 +87,12 @@ SELECT SPLIT_PART('one,two,three', ',', 2) AS SecondPart;
 
 
 -- 12. STRING_AGG()
-Concatenates values from multiple rows into a single string with a specified separator.
+-- Concatenates values from multiple rows into a single string with a specified separator.
 SELECT STRING_AGG(first_name, ', ') AS AllNames
 FROM employee_demographics;
+
+
+-- 13. INSTR()
+-- Finds the position of a substring within a string (similar to CHARINDEX).
+SELECT INSTR('Hello World', 'World') AS Position;  -- MySQL
+-- Output: 7
