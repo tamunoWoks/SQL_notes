@@ -161,5 +161,10 @@ SELECT CHAR(65) AS CharacterValue;  -- MySQL, SQL Server, Oracle
 -- 24. LOCATE()
 -- Used to find the position of a substring within a string. 
 -- It returns the position (starting from 1) where the substring first occurs in the string. If the substring is not found, it returns 0.
-SELECT LOCATE('world', 'Hello world!'); -- Returns 7
+SELECT LOCATE('world', 'Hello world!');
+-- Returns 7
 
+-- Example with start position
+SELECT LOCATE('o', 'Hello world!', 5);
+-- Returns 8
+-- This returns 8 because it starts searching from position 5, and the first 'o' after position 5 is at position 8.
