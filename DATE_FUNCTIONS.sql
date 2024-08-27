@@ -7,13 +7,30 @@
 -- 1. CURRENT_DATE()
 --Returns the current date.
 SELECT CURRENT_DATE() AS today_date;
-
+-- Output: 2024-08-27
 
 -- 2. CURRENT_TIME()
 -- Returns the current time.
 SELECT CURRENT_TIME() AS time_now;
-
+-- Output: 14:23:55
 
 -- 3. CURRENT_TIMESTAMP()
 -- Returns the current date and time.
 SELECT CURRENT_TIMESTAMP() AS timestamp_now;
+-- Output: 2024-08-27 14:23:55
+
+-- 4. DATE()
+-- Extracts the date part from a datetime expression.
+SELECT DATE('2024-08-27 14:23:55') AS date_part;
+-- Output: 2024-08-27
+
+-- Output: 
+
+
+-- Output: 
+
+
+-- Output: 
+
+
+-- Output: 
