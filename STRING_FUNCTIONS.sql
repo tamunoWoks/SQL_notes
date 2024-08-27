@@ -78,3 +78,9 @@ SELECT DATE_FORMAT(NOW(), '%Y-%m-%d') AS FormattedDate;  -- MySQL
 -- Reverses the order of characters in a string.
 SELECT REVERSE('Hello World') AS ReversedString;
 -- Output: 'dlroW olleH'
+
+
+-- 11. SPLIT_PART()
+-- Splits a string into parts based on a delimiter and returns a specific part.
+SELECT SPLIT_PART('one,two,three', ',', 2) AS SecondPart;
+-- Output: 'two'
