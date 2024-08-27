@@ -84,3 +84,9 @@ SELECT REVERSE('Hello World') AS ReversedString;
 -- Splits a string into parts based on a delimiter and returns a specific part.
 SELECT SPLIT_PART('one,two,three', ',', 2) AS SecondPart;
 -- Output: 'two'
+
+
+-- 12. STRING_AGG()
+Concatenates values from multiple rows into a single string with a specified separator.
+SELECT STRING_AGG(first_name, ', ') AS AllNames
+FROM employee_demographics;
