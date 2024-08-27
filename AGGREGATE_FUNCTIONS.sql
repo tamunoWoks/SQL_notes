@@ -35,3 +35,7 @@ FROM employee_demographics;
 SELECT MIN(age) AS minimum_age
 FROM employee_demographics;
 
+-- 7. VARIANCE()
+-- Calculates the variance of the values in a numeric column.
+SELECT VARIANCE(age) AS age_variance 
+FROM employee_demographics;
