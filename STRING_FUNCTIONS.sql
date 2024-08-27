@@ -102,3 +102,9 @@ SELECT INSTR('Hello World', 'World') AS Position;  -- MySQL
 -- Capitalizes the first letter of each word in a string (Oracle, PostgreSQL).
 SELECT INITCAP('hello world from sql') AS CapitalizedString;  -- Oracle, PostgreSQL
 -- Output: 'Hello World From Sql'
+
+
+-- 15. LPAD()
+-- Pads the left side of a string with a specified set of characters.
+SELECT LPAD('SQL', 5, '*') AS PaddedString;  -- Oracle, MySQL, PostgreSQL
+-- Output: '**SQL'
