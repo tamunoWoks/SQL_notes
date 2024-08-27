@@ -57,10 +57,17 @@ SELECT EXTRACT(YEAR FROM '2024-08-27') AS year_part,
 -- Output: 2024       8           27
 
 
--- Output:
+-- 10. STR_TO_DATE()
+-- Converts a string to a date.
+SELECT STR_TO_DATE('27-08-2024', '%d-%m-%Y') AS date_converted;
+-- Output: 2024-08-27
 
 
--- Output:
+-- 11. TIME()
+-- Extracts the time part from a datetime expression.
+SELECT TIME('2024-08-27 14:23:55') AS time_part;
+-- Output: 14:23:55
+
 
 
 -- Output:
