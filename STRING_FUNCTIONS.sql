@@ -6,5 +6,11 @@
 
 -- 1. TRIM
 -- Removes leading and trailing spaces from a string.
-SELECT TRIM('   Hello World   ') AS TrimmedString;  -- Standard SQL, MySQL, PostgreSQL
+SELECT TRIM('   Hello World   ') AS TrimmedString;
+-- Output: 'Hello World'
+
+
+-- 2. LTRIM
+-- Removes leading spaces from a string.
+SELECT LTRIM('   Hello World') AS LTrimmedString;
 -- Output: 'Hello World'
