@@ -35,8 +35,10 @@ SELECT DATE_ADD('2024-08-27', INTERVAL 7 DAY) AS next_week;
 SELECT DATE_SUB('2024-08-27', INTERVAL 7 DAY) AS last_week;
 -- Output: 2024-08-20
 
-
--- Output: 
+-- 7. DATEDIFF()
+-- Returns the difference in days between two dates.
+SELECT DATEDIFF('2024-08-27', '2024-08-20') AS days_difference;
+-- Output: 7
 
 
 -- Output: 
