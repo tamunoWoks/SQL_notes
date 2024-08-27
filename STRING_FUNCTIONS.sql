@@ -35,3 +35,12 @@ SELECT CHARINDEX('World', 'Hello World') AS Position;  -- SQL Server
 
 SELECT POSITION('World' IN 'Hello World') AS Position;  -- PostgreSQL
 -- Output: 7
+
+
+-- 6.  SUBSTRING() / SUBSTR()
+-- Extracts a substring from a string.
+SELECT SUBSTRING('Hello World', 1, 5) AS Substring;  -- SQL Server
+-- Output: 'Hello'
+
+SELECT SUBSTR('Hello World', 1, 5) AS Substring;  -- MySQL, Oracle
+-- Output: 'Hello'
