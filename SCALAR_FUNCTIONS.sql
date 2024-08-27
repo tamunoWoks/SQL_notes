@@ -29,3 +29,11 @@ SELECT SUBSTRING('Hello World', 1, 5) AS Substring;  -- SQL Server
 
 SELECT SUBSTR('Hello World', 1, 5) AS Substring;  -- Oracle, MySQL
 -- Output: 'Hello'
+
+-- 5. CONCAT()
+-- Concatenates two or more strings.
+SELECT CONCAT('Hello', ' ', 'World') AS ConcatenatedString;  -- MySQL, PostgreSQL
+-- Output: 'Hello World'
+
+SELECT 'Hello' + ' ' + 'World' AS ConcatenatedString;  -- SQL Server
+-- Output: 'Hello World'
