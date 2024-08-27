@@ -44,3 +44,12 @@ SELECT SUBSTRING('Hello World', 1, 5) AS Substring;  -- SQL Server
 
 SELECT SUBSTR('Hello World', 1, 5) AS Substring;  -- MySQL, Oracle
 -- Output: 'Hello'
+
+
+-- 7. LEFT() / RIGHT()
+-- Returns a specified number of characters from the start or end of a string.
+SELECT LEFT('Hello World', 5) AS LeftString;
+-- Output: 'Hello'
+
+SELECT RIGHT('Hello World', 5) AS RightString;
+-- Output: 'World'
