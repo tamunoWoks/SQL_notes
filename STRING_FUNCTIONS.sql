@@ -126,3 +126,9 @@ SELECT TRANSLATE('SQL', 'SQ', 'XY') AS TranslatedString;  -- Oracle, PostgreSQL
 -- Replaces substrings that match a regular expression pattern with another substring.
 SELECT REGEXP_REPLACE('123-456-7890', '\d', '*') AS MaskedNumber;  -- Oracle, PostgreSQL, MySQL
 -- Output: '***-***-****'
+
+
+-- 19. REGEXP_SUBSTR()
+-- Extracts a substring from a string using a regular expression pattern.
+SELECT REGEXP_SUBSTR('123 Main St, Suite 100', '\d+') AS ExtractedNumber;  -- Oracle, PostgreSQL, MySQL
+-- Output: '123'
