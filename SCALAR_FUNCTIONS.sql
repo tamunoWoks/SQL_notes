@@ -56,3 +56,12 @@ SELECT NOW() AS CurrentDateTime;  -- PostgreSQL, MySQL
 
 SELECT GETDATE() AS CurrentDateTime;  -- SQL Server
 -- Output: '2024-08-26 12:34:56'
+
+
+-- 8. CAST() / CONVERT()
+-- Converts a value from one data type to another.
+SELECT CAST('2024-08-26' AS DATE) AS ConvertedDate;  -- SQL Server, PostgreSQL
+-- Output: 2024-08-26
+
+SELECT CONVERT(DATE, '2024-08-26') AS ConvertedDate;  -- SQL Server
+-- Output: 2024-08-26
