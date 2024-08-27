@@ -24,7 +24,11 @@ SELECT CURRENT_TIMESTAMP() AS timestamp_now;
 SELECT DATE('2024-08-27 14:23:55') AS date_part;
 -- Output: 2024-08-27
 
--- Output: 
+
+-- 5. DATE_ADD()
+-- Adds a time/date interval to a date
+SELECT DATE_ADD('2024-08-27', INTERVAL 7 DAY) AS next_week;
+-- Output: 2024-09-03
 
 
 -- Output: 
