@@ -39,5 +39,12 @@ FROM employee_demographics;
 -- Calculates the variance of the values in a numeric column.
 SELECT VARIANCE(age) AS age_variance 
 FROM employee_demographics;
--- Variance in statistics measures the degree of spread or dispersion of a set of numbers. 
+-- Variance measures the degree of spread or dispersion of a set of numbers. 
 -- It quantifies how much the values in a data set deviate from the mean (average) of the data.
+
+-- 8. STDDEV()
+-- Calculates the standard deviation of the values in a numeric column.
+SELECT STDDEV(salary) AS age_std_dev
+FROM employee_salary;
+-- Standard deviation measures the amount of variation or dispersion in a set of values. 
+-- It represents how spread out the data points are from the mean, and it is the square root of the variance.
