@@ -96,3 +96,9 @@ FROM employee_demographics;
 -- Finds the position of a substring within a string (similar to CHARINDEX).
 SELECT INSTR('Hello World', 'World') AS Position;  -- MySQL
 -- Output: 7
+
+
+-- 14. INITCAP()
+-- Capitalizes the first letter of each word in a string (Oracle, PostgreSQL).
+SELECT INITCAP('hello world from sql') AS CapitalizedString;  -- Oracle, PostgreSQL
+-- Output: 'Hello World From Sql'
