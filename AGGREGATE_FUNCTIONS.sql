@@ -13,9 +13,9 @@ FROM employee_demographics;
 -- 2. SUM()
 -- Returns the total sum of a numeric column.
 SELECT SUM(salary) AS total_salary
-FROM employee_salaries;
+FROM employee_salary;
 
 -- 3. AVG()
 -- Returns the average value of a numeric column.
 SELECT AVG(salary) AS average_salary
-FROM employee_salaries;
+FROM employee_salary;
