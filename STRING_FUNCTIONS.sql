@@ -164,6 +164,7 @@ SELECT CHAR(65) AS CharacterValue;  -- MySQL, SQL Server, Oracle
 SELECT LOCATE('world', 'Hello world!');
 -- Returns 7
 
+-- Usually LOCATE() returns the first instance of the requested query unless a start position is specified
 -- Example with start position
 SELECT LOCATE('o', 'Hello world!', 5);
 -- Returns 8
