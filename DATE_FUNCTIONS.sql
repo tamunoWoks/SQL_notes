@@ -40,5 +40,7 @@ SELECT DATE_SUB('2024-08-27', INTERVAL 7 DAY) AS last_week;
 SELECT DATEDIFF('2024-08-27', '2024-08-20') AS days_difference;
 -- Output: 7
 
-
--- Output: 
+8. DATE_FORMAT()
+-- Formats a date according to the specified format.
+SELECT DATE_FORMAT('2024-08-27', '%W, %M %d, %Y') AS formatted_date;
+-- Output: Tuesday, August 27, 2024
