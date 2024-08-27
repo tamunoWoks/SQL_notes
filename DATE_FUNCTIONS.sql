@@ -9,3 +9,6 @@
 SELECT CURRENT_DATE() AS today_date;
 
 
+-- 2. CURRENT_TIME()
+-- Returns the current time.
+SELECT CURRENT_TIME() AS time_now;
