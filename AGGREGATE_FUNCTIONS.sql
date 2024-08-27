@@ -19,3 +19,8 @@ FROM employee_salary;
 -- Returns the average value of a numeric column.
 SELECT AVG(salary) AS average_salary
 FROM employee_salary;
+
+-- 4. MAX()
+-- Returns the maximum value of a column.
+SELECT MAX(age) AS max_price
+FROM employee_demographics;
