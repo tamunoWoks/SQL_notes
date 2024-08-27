@@ -10,22 +10,28 @@
 SELECT COUNT(*) AS total_employees
 FROM employee_demographics;
 
--- 2. SUM()
+-- 2. COUNT(DISTINCT)
+-- Counts the distinct (unique) non-null values in a column.
+SELECT COUNT(DISTINCT salary) AS salary_groups
+FROM employee_salary;
+
+-- 3. SUM()
 -- Returns the total sum of a numeric column.
 SELECT SUM(salary) AS total_salary
 FROM employee_salary;
 
--- 3. AVG()
+-- 4. AVG()
 -- Returns the average value of a numeric column.
 SELECT AVG(salary) AS average_salary
 FROM employee_salary;
 
--- 4. MAX()
+-- 5. MAX()
 -- Returns the maximum value of a column.
 SELECT MAX(age) AS maximum_age
 FROM employee_demographics;
 
--- 5. MIN()
+-- 6. MIN()
 -- Returns the minimum value of a column
 SELECT MIN(age) AS minimum_age
 FROM employee_demographics;
+
