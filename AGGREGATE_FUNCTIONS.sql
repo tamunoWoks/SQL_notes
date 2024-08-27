@@ -39,3 +39,5 @@ FROM employee_demographics;
 -- Calculates the variance of the values in a numeric column.
 SELECT VARIANCE(age) AS age_variance 
 FROM employee_demographics;
+-- Variance in statistics measures the degree of spread or dispersion of a set of numbers. 
+-- It quantifies how much the values in a data set deviate from the mean (average) of the data.
