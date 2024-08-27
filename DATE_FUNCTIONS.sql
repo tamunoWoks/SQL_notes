@@ -12,3 +12,8 @@ SELECT CURRENT_DATE() AS today_date;
 -- 2. CURRENT_TIME()
 -- Returns the current time.
 SELECT CURRENT_TIME() AS time_now;
+
+
+-- 3. CURRENT_TIMESTAMP()
+-- Returns the current date and time.
+SELECT CURRENT_TIMESTAMP() AS timestamp_now;
