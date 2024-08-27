@@ -8,4 +8,9 @@
 -- 1. COUNT()
 -- Returns the number of rows that match a specified condition.
 SELECT COUNT(*) AS total_employees
-FROM employee_demographic
+FROM employee_demographics;
+
+-- 2. SUM()
+-- Returns the total sum of a numeric column.
+SELECT SUM(salary) AS total_salary
+FROM employee_salaries;
