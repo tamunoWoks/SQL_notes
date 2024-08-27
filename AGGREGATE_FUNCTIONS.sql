@@ -22,5 +22,10 @@ FROM employee_salary;
 
 -- 4. MAX()
 -- Returns the maximum value of a column.
-SELECT MAX(age) AS max_price
+SELECT MAX(age) AS maximum_age
+FROM employee_demographics;
+
+-- 5. MIN()
+-- Returns the minimum value of a column
+SELECT MIN(age) AS minimum_age
 FROM employee_demographics;
