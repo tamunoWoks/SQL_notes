@@ -144,3 +144,9 @@ SELECT REPEAT('SQL', 3) AS RepeatedString;  -- MySQL, PostgreSQL
 -- Generates a string of spaces of a specified length.
 SELECT 'SQL' + SPACE(3) + 'Server' AS PaddedString;  -- SQL Server
 -- Output: 'SQL   Server'
+
+
+-- 22. ASCII()
+-- Returns the ASCII code of the first character of a string.
+SELECT ASCII('A') AS AsciiValue;  -- MySQL, SQL Server, Oracle
+-- Output: 65
