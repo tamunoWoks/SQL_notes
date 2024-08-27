@@ -53,3 +53,12 @@ SELECT LEFT('Hello World', 5) AS LeftString;
 
 SELECT RIGHT('Hello World', 5) AS RightString;
 -- Output: 'World'
+
+
+-- 8. CONCAT()
+-- Concatenates two or more strings.
+SELECT CONCAT('Hello', ' ', 'World') AS ConcatenatedString;  -- MySQL, PostgreSQL
+-- Output: 'Hello World'
+
+SELECT 'Hello' + ' ' + 'World' AS ConcatenatedString;  -- SQL Server
+-- Output: 'Hello World'
