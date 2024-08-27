@@ -37,3 +37,8 @@ SELECT CONCAT('Hello', ' ', 'World') AS ConcatenatedString;  -- MySQL, PostgreSQ
 
 SELECT 'Hello' + ' ' + 'World' AS ConcatenatedString;  -- SQL Server
 -- Output: 'Hello World'
+
+-- ROUND()
+-- Rounds a numeric value to a specified number of decimal places.
+SELECT ROUND(123.4567, 2) AS RoundedNumber;
+-- Output: 123.46
