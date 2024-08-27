@@ -65,3 +65,9 @@ SELECT CAST('2024-08-26' AS DATE) AS ConvertedDate;  -- SQL Server, PostgreSQL
 
 SELECT CONVERT(DATE, '2024-08-26') AS ConvertedDate;  -- SQL Server
 -- Output: 2024-08-26
+
+
+-- 9. COALESCE()
+-- Returns the first non-null value in a list.
+SELECT COALESCE(NULL, NULL, 'FirstNonNull', 'SecondNonNull') AS FirstNonNullValue;
+-- Output: 'FirstNonNull'
