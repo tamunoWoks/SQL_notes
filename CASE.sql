@@ -30,3 +30,15 @@ SELECT
     END AS salary_category
 FROM
     employee_salary;
+
+
+-- 2. HANDLING NULL VALUES
+SELECT
+    employee_id,
+    dept_id,
+    CASE
+        WHEN dept_id IS NULL THEN 'Unknown'
+        ELSE 'Legit'
+    END AS employee_status
+FROM
+   employee_salary;
