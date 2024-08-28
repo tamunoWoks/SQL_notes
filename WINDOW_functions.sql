@@ -75,4 +75,16 @@ Rank() OVER(PARTITION BY gender ORDER BY salary desc) rank_1
 FROM employee_demographics dem
 JOIN employee_salary sal
 	ON dem.employee_id = sal.employee_id;
--- Rank repeats on tom ad jerry at 5, but then skips 6 to go to 7 -- this goes based off positional rank
+-- Rank repeats on tom ad jerry at 5, but then skips 6 to go to 7 
+-- this goes based off positional rank
+
+
+-- DENSE_RANK()
+-- Similar to RANK(), but the next rank is incremented by 1, regardless of the number of rows with the previous rank.
+SELECT dem.employee_id, dem.first_name, gender, salary,
+ROW_NUMBER() OVER(PARTITION BY gender ORDER BY salary desc) row_num,
+Rank() OVER(PARTITION BY gender ORDER BY salary desc) rank_1,
+dense_rank() OVER(PARTITION BY gender ORDER BY salary desc) dense_rank_2 -- this is numerically ordered instead of positional like rank
+FROM employee_demographics dem
+JOIN employee_salary sal
+	ON dem.employee_id = sal.employee_id;
