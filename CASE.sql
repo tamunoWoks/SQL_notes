@@ -61,3 +61,15 @@ SET salary = salary +
         WHEN salary < 45000 THEN salary + (salary * 0.07)
         ELSE 0
     END AS new_salary;
+
+
+-- OR
+SELECT first_name, last_name, salary,
+CASE
+	WHEN salary > 45000 THEN salary + (salary * 0.05)
+    WHEN salary < 45000 THEN salary + (salary * 0.07)
+END AS new_salary,
+CASE
+	WHEN dept_id = 6 THEN salary * .10
+END AS Bonus
+FROM employee_salary;
