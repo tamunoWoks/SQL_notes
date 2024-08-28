@@ -76,3 +76,9 @@ SELECT TRUNCATE(123.45678, 2) AS TruncatedValue;
 -- Returns the sign of x. It returns -1 if x is negative, 0 if x is zero, and 1 if x is positive.
 SELECT SIGN(-7) AS SignValue;
 -- Result: -1
+
+
+-- 13. PI()
+-- Returns the value of PI (π).
+SELECT PI() AS PiValue;
+-- Result: 3.141592653589793
