@@ -16,8 +16,9 @@ FROM employee_demographics dem
 JOIN employee_salary sal
 	ON dem.employee_id = sal.employee_id
 GROUP BY gender;
-
 -- now let's try doing something similar with a window function
+
+-- OVER()
 SELECT dem.employee_id, dem.first_name, gender, salary,
 AVG(salary) OVER()
 FROM employee_demographics dem
