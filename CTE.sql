@@ -46,6 +46,7 @@ JOIN employee_salary sal
 GROUP BY gender
 )
 -- notice here I have to use back ticks to specify the table names  - without them it doesn't work
+-- You can use aliases to simplify this.
 SELECT gender, ROUND(AVG(`SUM(salary)`/`COUNT(salary)`),2)
 FROM CTE_Example
 GROUP BY gender;
