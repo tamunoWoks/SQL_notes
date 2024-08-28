@@ -73,3 +73,19 @@ CASE
 	WHEN dept_id = 6 THEN salary * .10
 END AS Bonus
 FROM employee_salary;
+
+
+-- 5. Conditional Ordering with CASE():
+SELECT
+    first_name,
+    dept_id,
+    salary
+FROM
+    employee_salary
+ORDER BY
+    CASE
+        WHEN dept_id = 2 THEN 'Animal Control'
+        WHEN dept_id = 4 THEN 'Healthcare'
+	WHEN dept_id = 5 THEN 'Library'
+        ELSE 'Unknown'
+    END;
