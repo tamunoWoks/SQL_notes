@@ -94,3 +94,9 @@ SELECT SIN(PI() / 2) AS SineValue;
 -- Returns the cosine of x (where x is in radians).
 SELECT COS(PI()) AS CosineValue;
 -- Result: -1
+
+
+-- 16. TAN(x)
+-- Returns the tangent of x (where x is in radians).
+SELECT TAN(PI() / 4) AS TangentValue;
+-- Result: 1
