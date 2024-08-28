@@ -14,3 +14,13 @@ WHERE employee_id IN
 				FROM employee_salary
                 WHERE dept_id = 1);            
 -- We are using that subquery in the where statement and if we just highlight the subquery and run it it's basically a list we are selecting from in the outer query
+-- If we try to have more than 1 column in the subquery we get an error saying the operand should contain 1 column only 
+
+
+-- We can also use subqueries in the select statements
+-- 2. Let's look at the salaries and compare them to the average salary
+SELECT first_name, 
+salary, 
+(SELECT AVG(salary) 
+	FROM employee_salary)
+FROM employee_salary;
