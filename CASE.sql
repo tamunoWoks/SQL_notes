@@ -51,3 +51,13 @@ SELECT
     COUNT(CASE WHEN price < 50 THEN 1 END) AS low_price_count
 FROM
     sales;
+
+
+-- 4: Updating with CASE:
+UPDATE employee_salary
+SET salary = salary +
+    CASE
+        WHEN salary > 45000 THEN salary + (salary * 0.05)
+        WHEN salary < 45000 THEN salary + (salary * 0.07)
+        ELSE 0
+    END AS new_salary;
