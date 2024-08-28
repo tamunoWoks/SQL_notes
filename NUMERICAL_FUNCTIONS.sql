@@ -88,3 +88,9 @@ SELECT PI() AS PiValue;
 -- Returns the sine of x (where x is in radians).
 SELECT SIN(PI() / 2) AS SineValue;
 -- Result: 1
+
+
+-- 15. COS(x)
+-- Returns the cosine of x (where x is in radians).
+SELECT COS(PI()) AS CosineValue;
+-- Result: -1
