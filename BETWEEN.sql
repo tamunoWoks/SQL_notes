@@ -15,9 +15,16 @@ WHERE column_name BETWEEN value1 AND value2;
 SELECT EmployeeID, FirstName, LastName, Salary
 FROM Employees
 WHERE Salary BETWEEN 50000 AND 100000;
-
+-- Returns employees whose salary is between $50,000 and $100,000.
 
 -- 2. Date Range:
 SELECT OrderID, CustomerID, OrderDate
 FROM Orders
 WHERE OrderDate BETWEEN '2024-01-01' AND '2024-06-30';
+-- Returns orders placed between January 1, 2024, and June 30, 2024.
+
+-- 3. Text range:
+SELECT ProductID, ProductName
+FROM Products
+WHERE ProductName BETWEEN 'A' AND 'C';
+-- Returns products whose names start with letters between 'A' and 'C'.
