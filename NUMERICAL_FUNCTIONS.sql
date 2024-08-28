@@ -10,3 +10,9 @@
 -- Returns the absolute value of a number x.
 SELECT ABS(-10) AS AbsoluteValue;
 -- Result: 10
+
+
+-- 2. CEILING(x) or CEIL(x)
+-- Rounds a number x up to the nearest integer.
+SELECT CEILING(4.3) AS CeilingValue;
+-- Result: 5
