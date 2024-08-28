@@ -13,3 +13,24 @@ WITH cte_name AS (
     WHERE some_condition
 )
 SELECT * FROM cte_name;
+
+
+-- EXAMPLES
+
+-- 1. 
+WITH CTE_Example AS 
+(
+SELECT gender, SUM(salary), MIN(salary), MAX(salary), COUNT(salary), AVG(salary)
+FROM employee_demographics dem
+JOIN employee_salary sal
+	ON dem.employee_id = sal.employee_id
+GROUP BY gender
+)
+-- directly after using it we can query the CTE
+SELECT *
+FROM CTE_Example;
+
+
+-- Now if I come down here, it won't work because it's not using the same syntax
+SELECT *
+FROM CTE_Example;
