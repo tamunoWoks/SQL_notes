@@ -2,6 +2,8 @@
 
 -- Common Table Expressions (CTEs) are used to define temporary result sets that can be referenced within a SELECT, INSERT, UPDATE, or DELETE statement. 
 -- CTEs can be particularly useful for simplifying complex queries, making them more readable and easier to maintain.
+-- First, CTEs start using a "With" Keyword. Now we get to name this CTE anything we want
+-- Then we say as and within the parenthesis we build our subquery/table we want
 
 -- BASIC CTE SYNTAX
 WITH cte_name AS (
