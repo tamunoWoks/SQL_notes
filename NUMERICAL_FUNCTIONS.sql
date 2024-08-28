@@ -28,3 +28,9 @@ SELECT FLOOR(4.7) AS FloorValue;
 -- Rounds a number x to d decimal places.
 SELECT ROUND(3.14159, 2) AS RoundedValue;
 -- Result: 3.14
+
+
+-- 5. POWER(x, y)
+-- Returns x raised to the power of y.
+SELECT POWER(2, 3) AS PowerValue;
+-- Result: 8
