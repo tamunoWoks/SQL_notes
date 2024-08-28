@@ -100,3 +100,9 @@ SELECT COS(PI()) AS CosineValue;
 -- Returns the tangent of x (where x is in radians).
 SELECT TAN(PI() / 4) AS TangentValue;
 -- Result: 1
+
+
+-- 17. RADIANS(x)
+-- Converts degrees to radians.
+SELECT RADIANS(180) AS RadiansValue;
+-- Result: 3.141592653589793
