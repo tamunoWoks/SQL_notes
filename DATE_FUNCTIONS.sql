@@ -75,7 +75,10 @@ SELECT TIMESTAMP('2024-08-27', '14:23:55') AS timestamp_value;
 -- Output: 2024-08-27 14:23:55
 
 
--- Output:
+-- 13. TIMESTAMPDIFF()
+-- Returns the difference between two dates in the specified unit (e.g., year, month, day).
+SELECT TIMESTAMPDIFF(MONTH, '2024-01-01', '2024-08-27') AS month_diff;
+-- Output: 7
 
 
 -- Output:
