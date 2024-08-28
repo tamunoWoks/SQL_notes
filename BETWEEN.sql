@@ -8,3 +8,10 @@
 SELECT column_name(s)
 FROM table_name
 WHERE column_name BETWEEN value1 AND value2;
+
+
+-- EXAMPLES
+-- 1. Numeric range:
+SELECT EmployeeID, FirstName, LastName, Salary
+FROM Employees
+WHERE Salary BETWEEN 50000 AND 100000;
