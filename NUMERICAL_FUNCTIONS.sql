@@ -16,3 +16,9 @@ SELECT ABS(-10) AS AbsoluteValue;
 -- Rounds a number x up to the nearest integer.
 SELECT CEILING(4.3) AS CeilingValue;
 -- Result: 5
+
+
+-- 3. FLOOR(x)
+-- Rounds a number x down to the nearest integer.
+SELECT FLOOR(4.7) AS FloorValue;
+-- Result: 4
