@@ -64,5 +64,15 @@ SELECT dem.employee_id, dem.first_name, gender, salary,
 ROW_NUMBER() OVER(PARTITION BY gender ORDER BY salary desc)
 FROM employee_demographics dem
 JOIN employee_salary sal
-	ON dem.employee_id = sal.employee_id
-;
+	ON dem.employee_id = sal.employee_id;
+
+
+-- RANK()
+-- Rows with equal values receive the same rank, and the next rank is incremented by the number of rows with the previous rank.
+SELECT dem.employee_id, dem.first_name, gender, salary,
+ROW_NUMBER() OVER(PARTITION BY gender ORDER BY salary desc) row_num,
+Rank() OVER(PARTITION BY gender ORDER BY salary desc) rank_1 
+FROM employee_demographics dem
+JOIN employee_salary sal
+	ON dem.employee_id = sal.employee_id;
+-- Rank repeats on tom ad jerry at 5, but then skips 6 to go to 7 -- this goes based off positional rank
