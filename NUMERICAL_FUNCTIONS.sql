@@ -52,3 +52,9 @@ SELECT MOD(10, 3) AS ModulusValue;
 -- Returns e raised to the power of x.
 SELECT EXP(1) AS ExponentialValue;
 -- Result: 2.718281828459045
+
+
+-- 9. LOG(x)
+-- Returns the natural logarithm of x.
+SELECT LOG(10) AS NaturalLogarithm;
+-- Result: 2.302585092994046
