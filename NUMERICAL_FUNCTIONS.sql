@@ -46,3 +46,9 @@ SELECT SQRT(16) AS SquareRoot;
 -- Returns the remainder of x divided by y.
 SELECT MOD(10, 3) AS ModulusValue;
 -- Result: 1
+
+
+-- 8. EXP(x)
+-- Returns e raised to the power of x.
+SELECT EXP(1) AS ExponentialValue;
+-- Result: 2.718281828459045
