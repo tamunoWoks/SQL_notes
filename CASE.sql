@@ -17,7 +17,7 @@ FROM
 
 -- EXAMPLES
 
--- 1. CATEGORIZING DATA
+-- 1. CATEGORIZING DATA:
 SELECT
     employee_id,
     first_name, 
@@ -32,7 +32,7 @@ FROM
     employee_salary;
 
 
--- 2. HANDLING NULL VALUES
+-- 2. HANDLING NULL VALUES:
 SELECT
     employee_id,
     dept_id,
@@ -42,3 +42,12 @@ SELECT
     END AS employee_status
 FROM
    employee_salary;
+
+
+-- 3. COMBINING CASE() WITH AGGREGATIONS:
+SELECT
+    COUNT(CASE WHEN price > 100 THEN 1 END) AS high_price_count,
+    COUNT(CASE WHEN price BETWEEN 50 AND 100 THEN 1 END) AS medium_price_count,
+    COUNT(CASE WHEN price < 50 THEN 1 END) AS low_price_count
+FROM
+    sales;
