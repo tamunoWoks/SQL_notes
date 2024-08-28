@@ -69,8 +69,10 @@ SELECT TIME('2024-08-27 14:23:55') AS time_part;
 -- Output: 14:23:55
 
 
-
--- Output:
+-- 12. TIMESTAMP()
+-- Converts a date or date and time string to a timestamp.
+SELECT TIMESTAMP('2024-08-27', '14:23:55') AS timestamp_value;
+-- Output: 2024-08-27 14:23:55
 
 
 -- Output:
