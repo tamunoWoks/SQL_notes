@@ -19,6 +19,7 @@ GROUP BY gender;
 -- now let's try doing something similar with a window function
 
 -- OVER()
+-- Used with window functions to define how the window function should operate over a specific subset of the data.
 SELECT dem.employee_id, dem.first_name, gender, salary,
 AVG(salary) OVER()
 FROM employee_demographics dem
@@ -28,9 +29,10 @@ JOIN employee_salary sal
 -- We could get this exact same output with a subquery in the select statement, but window functions have a lot more functionality.
 
 
--- PARTITION()
+-- PARTITION BY()
+-- Used in conjunction with window functions to divide the result set into partitions or groups.
 -- if we use partition it's kind of like the group by except it doesn't roll up 
--- It just partitions or breaks based on a column when doing the calculation
+
 
 SELECT dem.employee_id, dem.first_name, gender, salary,
 AVG(salary) OVER(PARTITION BY gender)
@@ -46,3 +48,21 @@ SUM(salary) OVER(PARTITION BY gender ORDER BY employee_id)
 FROM employee_demographics dem
 JOIN employee_salary sal
 	ON dem.employee_id = sal.employee_id;
+
+
+-- ROW_NUMBER()
+-- Assigns a unique sequential integer to rows within a partition of a result set.
+
+SELECT dem.employee_id, dem.first_name, gender, salary,
+ROW_NUMBER() OVER(PARTITION BY gender)
+FROM employee_demographics dem
+JOIN employee_salary sal
+	ON dem.employee_id = sal.employee_id;
+
+-- let's  try ordering by salary so we can see the order of highest paid employees by gender
+SELECT dem.employee_id, dem.first_name, gender, salary,
+ROW_NUMBER() OVER(PARTITION BY gender ORDER BY salary desc)
+FROM employee_demographics dem
+JOIN employee_salary sal
+	ON dem.employee_id = sal.employee_id
+;
