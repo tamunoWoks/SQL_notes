@@ -17,7 +17,7 @@ SELECT * FROM cte_name;
 
 -- EXAMPLES
 
--- 1. 
+-- 1. SINGLE CTE
 WITH CTE_Example AS 
 (
 SELECT gender, SUM(salary), MIN(salary), MAX(salary), COUNT(salary), AVG(salary)
@@ -30,7 +30,24 @@ GROUP BY gender
 SELECT *
 FROM CTE_Example;
 
-
 -- Now if I come down here, it won't work because it's not using the same syntax
 SELECT *
 FROM CTE_Example;
+
+
+-- 2. CALCULATION WITHIN CTE
+-- We can now use the columns within this CTE to do calculations on this data that we couldn't have done without it.
+WITH CTE_Example AS 
+(
+SELECT gender, SUM(salary), MIN(salary), MAX(salary), COUNT(salary)
+FROM employee_demographics dem
+JOIN employee_salary sal
+	ON dem.employee_id = sal.employee_id
+GROUP BY gender
+)
+-- notice here I have to use back ticks to specify the table names  - without them it doesn't work
+-- You can use aliases to simplify this
+SELECT gender, ROUND(AVG(`SUM(salary)`/`COUNT(salary)`),2)
+FROM CTE_Example
+GROUP BY gender;
+
