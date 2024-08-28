@@ -64,3 +64,9 @@ SELECT LOG(10) AS NaturalLogarithm;
 -- Returns the base-10 logarithm of x.
 SELECT LOG10(100) AS Base10Logarithm;
 -- Result: 2
+
+
+-- 11. TRUNCATE(x, d)
+-- Truncates x to d decimal places without rounding.
+SELECT TRUNCATE(123.45678, 2) AS TruncatedValue;
+-- Result: 123.45
