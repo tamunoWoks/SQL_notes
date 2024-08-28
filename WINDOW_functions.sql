@@ -26,3 +26,23 @@ JOIN employee_salary sal
 	ON dem.employee_id = sal.employee_id;
 -- We can add any columns and it works. 
 -- We could get this exact same output with a subquery in the select statement, but window functions have a lot more functionality.
+
+
+-- PARTITION()
+-- if we use partition it's kind of like the group by except it doesn't roll up 
+-- It just partitions or breaks based on a column when doing the calculation
+
+SELECT dem.employee_id, dem.first_name, gender, salary,
+AVG(salary) OVER(PARTITION BY gender)
+FROM employee_demographics dem
+JOIN employee_salary sal
+	ON dem.employee_id = sal.employee_id;
+
+-- If we wanted to see what the salaries were for genders we could do that by using sum.
+-- Also we could use order by to get a rolling total
+
+SELECT dem.employee_id, dem.first_name, gender, salary,
+SUM(salary) OVER(PARTITION BY gender ORDER BY employee_id)
+FROM employee_demographics dem
+JOIN employee_salary sal
+	ON dem.employee_id = sal.employee_id;
