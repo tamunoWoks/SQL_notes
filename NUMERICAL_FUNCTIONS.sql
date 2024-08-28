@@ -58,3 +58,9 @@ SELECT EXP(1) AS ExponentialValue;
 -- Returns the natural logarithm of x.
 SELECT LOG(10) AS NaturalLogarithm;
 -- Result: 2.302585092994046
+
+
+-- 10. LOG10(x)
+-- Returns the base-10 logarithm of x.
+SELECT LOG10(100) AS Base10Logarithm;
+-- Result: 2
