@@ -106,3 +106,9 @@ SELECT TAN(PI() / 4) AS TangentValue;
 -- Converts degrees to radians.
 SELECT RADIANS(180) AS RadiansValue;
 -- Result: 3.141592653589793
+
+
+-- 18. DEGREES(x)
+-- Converts radians to degrees.
+SELECT DEGREES(PI()) AS DegreesValue;
+-- Result: 180
