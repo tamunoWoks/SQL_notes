@@ -87,4 +87,9 @@ SELECT NOW() AS current_datetime;
 -- Output: 2024-08-27 14:23:55
 
 
--- Output:
+-- 15. YEAR(), MONTH(), DAY()
+-- Extracts the year, month, or day from a date.
+SELECT YEAR('2024-08-27') AS year_value,
+       MONTH('2024-08-27') AS month_value,
+       DAY('2024-08-27') AS day_value;
+-- Output: 2024        8            27
