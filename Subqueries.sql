@@ -17,10 +17,21 @@ WHERE employee_id IN
 -- If we try to have more than 1 column in the subquery we get an error saying the operand should contain 1 column only 
 
 
--- We can also use subqueries in the select statements
+-- We can also use subqueries in the SELECT statements
 -- 2. Let's look at the salaries and compare them to the average salary
 SELECT first_name, 
 salary, 
 (SELECT AVG(salary) 
 	FROM employee_salary)
 FROM employee_salary;
+
+
+-- We can also use subqueries in the FROM statements
+-- When we use it here it's almost like we are creating a small table we are querying off of
+-- 3. 
+SELECT gender, AVG(Min_age)
+FROM (SELECT gender, MIN(age) Min_age, MAX(age) Max_age, COUNT(age) Count_age ,AVG(age) Avg_age
+FROM employee_demographics
+GROUP BY gender) AS Agg_Table
+GROUP BY gender;
+-- We have to name the Subquery in this case, else it will throw an error
