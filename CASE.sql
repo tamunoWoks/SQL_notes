@@ -13,3 +13,20 @@ SELECT
     END AS new_column_name
 FROM
     table_name;
+
+
+-- EXAMPLES
+
+-- 1. CATEGORIZING DATA
+SELECT
+    employee_id,
+    first_name, 
+    last_name,
+    salary,
+    CASE
+        WHEN salary > 80000 THEN 'High Salary'
+        WHEN salary BETWEEN 50000 AND 80000 THEN 'Medium Salary'
+        ELSE 'Low Salary'
+    END AS salary_category
+FROM
+    employee_salary;
