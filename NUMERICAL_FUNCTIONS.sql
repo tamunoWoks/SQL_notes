@@ -82,3 +82,9 @@ SELECT SIGN(-7) AS SignValue;
 -- Returns the value of PI (π).
 SELECT PI() AS PiValue;
 -- Result: 3.141592653589793
+
+
+-- 14. SIN(x)
+-- Returns the sine of x (where x is in radians).
+SELECT SIN(PI() / 2) AS SineValue;
+-- Result: 1
