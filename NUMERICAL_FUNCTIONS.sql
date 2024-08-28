@@ -22,3 +22,9 @@ SELECT CEILING(4.3) AS CeilingValue;
 -- Rounds a number x down to the nearest integer.
 SELECT FLOOR(4.7) AS FloorValue;
 -- Result: 4
+
+
+-- 4. ROUND(x, d)
+-- Rounds a number x to d decimal places.
+SELECT ROUND(3.14159, 2) AS RoundedValue;
+-- Result: 3.14
