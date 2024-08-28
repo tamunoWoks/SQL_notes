@@ -81,7 +81,10 @@ SELECT TIMESTAMPDIFF(MONTH, '2024-01-01', '2024-08-27') AS month_diff;
 -- Output: 7
 
 
--- Output:
+-- 14. NOW()
+-- Returns the current date and time.
+SELECT NOW() AS current_datetime;
+-- Output: 2024-08-27 14:23:55
 
 
 -- Output:
