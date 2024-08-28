@@ -40,3 +40,9 @@ SELECT POWER(2, 3) AS PowerValue;
 -- Returns the square root of x.
 SELECT SQRT(16) AS SquareRoot;
 -- Result: 4
+
+
+-- 7. MOD(x, y)
+-- Returns the remainder of x divided by y.
+SELECT MOD(10, 3) AS ModulusValue;
+-- Result: 1
