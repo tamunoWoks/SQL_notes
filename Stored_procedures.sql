@@ -30,3 +30,21 @@ DELIMITER ;
 -- now we can run this stored procedure
 CALL large_salaries2();
 
+
+-- we can also create a stored procedure by right clicking on Stored Procedures and creating one:
+USE `parks_and_recreation`;
+DROP procedure IF EXISTS `large_salaries3`;
+-- it automatically adds the dilimiter for us
+DELIMITER $$
+CREATE PROCEDURE large_salaries3()
+BEGIN
+	SELECT *
+	FROM employee_salary
+	WHERE salary >= 60000;
+	SELECT *
+	FROM employee_salary
+	WHERE salary >= 50000;
+END $$
+DELIMITER ;
+
+CALL large_order_totals3();
