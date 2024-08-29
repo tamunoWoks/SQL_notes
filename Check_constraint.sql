@@ -15,3 +15,16 @@ CREATE TABLE Persons (
     Age int,
     CHECK (Age>=18)
 );
+
+
+-- NAMING A CHRCK CONSTRAINT:
+-- To allow naming of a CHECK constraint, and for defining a CHECK constraint on multiple columns, use the following SQL syntax:
+
+CREATE TABLE Persons (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    City varchar(255),
+    CONSTRAINT CHK_Person CHECK (Age>=18 AND City='Sandnes')
+);
