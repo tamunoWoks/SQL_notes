@@ -47,3 +47,14 @@ RENAME COLUMN old_column_name TO new_column_name;
 -- Example:
 ALTER TABLE employees
 RENAME COLUMN emp_id TO employee_id;
+
+
+
+-- 5. Rename the Table
+-- Syntax:
+ALTER TABLE old_table_name
+RENAME TO new_table_name;
+
+-- Example:
+ALTER TABLE employees
+RENAME TO staff;
