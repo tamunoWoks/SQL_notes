@@ -16,3 +16,8 @@ favorite_movie varchar(100)
 SELECT *
 FROM temp_table;
 -- If we refresh our tables it isn't there. It isn't an actual table. It's just a table in memory.
+
+-- it's blank now, so we need to insert data into it like this:
+INSERT INTO temp_table
+VALUES ('Tammy','Wokoma','Alchemy of Souls');
+-- now when we run it and execute it again we have our data
