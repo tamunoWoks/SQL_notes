@@ -58,3 +58,13 @@ RENAME TO new_table_name;
 -- Example:
 ALTER TABLE employees
 RENAME TO staff;
+
+
+
+-- 6. Add a Constraint
+-- Syntax:
+ALTER TABLE table_name
+ADD CONSTRAINT constraint_name constraint_type (column_name);
+-- Example:
+ALTER TABLE employees
+ADD CONSTRAINT pk_employee_id PRIMARY KEY (employee_id);
