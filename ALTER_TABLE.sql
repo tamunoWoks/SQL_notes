@@ -36,3 +36,14 @@ DROP COLUMN column_name;
 -- Example:
 ALTER TABLE employees
 DROP COLUMN middle_name;
+
+
+
+-- 4. Rename a Column
+-- Syntax:
+ALTER TABLE table_name
+RENAME COLUMN old_column_name TO new_column_name;
+
+-- Example:
+ALTER TABLE employees
+RENAME COLUMN emp_id TO employee_id;
