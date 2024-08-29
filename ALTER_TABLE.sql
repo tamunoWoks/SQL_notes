@@ -47,6 +47,7 @@ RENAME COLUMN old_column_name TO new_column_name;
 -- Example:
 ALTER TABLE employees
 RENAME COLUMN emp_id TO employee_id;
+-- Renaming columns may break existing queries, views, or stored procedures that reference the old names.
 
 
 
@@ -58,6 +59,7 @@ RENAME TO new_table_name;
 -- Example:
 ALTER TABLE employees
 RENAME TO staff;
+-- -- Renaming tables may break existing queries, views, or stored procedures that reference the old names.
 
 
 
