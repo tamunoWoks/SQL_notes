@@ -14,3 +14,9 @@ DROP TABLE Shippers;
 -- To avoid this, you can use the IF EXISTS clause:
 DROP TABLE IF EXISTS table_name;
 -- Dropping a table with foreign key constraints might require first dropping or altering the dependent foreign keys.
+
+
+-- MySQL TRUNCATE TABLE
+-- The TRUNCATE TABLE statement is used to delete the data inside a table, but not the table itself.
+-- Syntax
+TRUNCATE TABLE table_name;
