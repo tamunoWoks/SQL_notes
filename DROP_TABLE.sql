@@ -6,3 +6,11 @@
 
 -- Basic Syntax:
 DROP TABLE table_name;
+
+
+-- Example
+DROP TABLE Shippers;
+-- If you try to drop a table that does not exist, you may encounter an error, depending on the SQL dialect you are using. 
+-- To avoid this, you can use the IF EXISTS clause:
+DROP TABLE IF EXISTS table_name;
+-- Dropping a table with foreign key constraints might require first dropping or altering the dependent foreign keys.
