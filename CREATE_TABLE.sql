@@ -9,3 +9,14 @@ CREATE TABLE table_name (
     column3 datatype constraints,
     ...
 );
+
+
+-- Example:
+CREATE TABLE Employees (
+    EmployeeID INT PRIMARY KEY,
+    FirstName VARCHAR(50) NOT NULL,
+    LastName VARCHAR(50) NOT NULL,
+    BirthDate DATE,
+    HireDate DATE,
+    Salary DECIMAL(10, 2) NOT NULL
+);
