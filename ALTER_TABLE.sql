@@ -13,3 +13,15 @@ ADD column_name data_type;
 -- Example
 ALTER TABLE employees
 ADD date_of_birth DATE;
+
+
+
+-- 2. MODIFY A COLUMN
+-- This can include changing the data type, setting a default value, or altering the column's properties.
+-- Syntax:
+ALTER TABLE table_name
+MODIFY COLUMN column_name new_data_type;
+
+-- Example
+ALTER TABLE employees
+MODIFY COLUMN salary DECIMAL(10, 2);
