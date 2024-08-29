@@ -44,3 +44,8 @@ INSERT INTO employee_salary (employee_id, first_name, last_name, occupation, sal
 VALUES(13, 'Jean-Ralphio', 'Saperstein', 'Entertainment 720 CEO', 1000000, NULL);
 -- now it was updated in the payments table and the trigger was triggered and update the corresponding values in the invoice table
 
+
+-- BEST PRACTICES
+-- Triggers should not contain complex logic or extensive processing, as this can slow down database operations.
+-- Be Careful with Recursive Triggers: Triggers that cause other triggers to fire (recursively) can lead to performance issues and unexpected behavior.
+-- Use Triggers Sparingly: Overusing triggers can make the database logic hard to understand and maintain.
