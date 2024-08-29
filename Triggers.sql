@@ -23,3 +23,24 @@
 -- These triggers override the standard operation. 
 -- Instead of performing the INSERT, UPDATE, or DELETE, the trigger performs a custom action. 
 -- They are particularly useful in views.
+
+
+-- CREATING A TRIGGER
+USE parks_and_recreation;
+DELIMITER $$
+
+CREATE TRIGGER employee_insert2
+AFTER INSERT ON employee_salary
+FOR EACH ROW
+BEGIN
+    INSERT INTO employee_demographics (employee_id, first_name, last_name) 
+    VALUES (NEW.employee_id,NEW.first_name,NEW.last_name);
+END $$
+DELIMITER ; 
+
+-- Now that it's created let's test it out.
+-- Let's insert a payment into the payments table and see if it updates in the Invoice table.
+INSERT INTO employee_salary (employee_id, first_name, last_name, occupation, salary, dept_id)
+VALUES(13, 'Jean-Ralphio', 'Saperstein', 'Entertainment 720 CEO', 1000000, NULL);
+-- now it was updated in the payments table and the trigger was triggered and update the corresponding values in the invoice table
+
