@@ -68,3 +68,14 @@ ADD CONSTRAINT constraint_name constraint_type (column_name);
 -- Example:
 ALTER TABLE employees
 ADD CONSTRAINT pk_employee_id PRIMARY KEY (employee_id);
+
+
+
+--7. Drop a Constraint
+-- Syntax:
+ALTER TABLE table_name
+DROP CONSTRAINT constraint_name;
+
+-- Example:
+ALTER TABLE employees
+DROP CONSTRAINT pk_employee_id;
