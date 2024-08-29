@@ -25,3 +25,14 @@ MODIFY COLUMN column_name new_data_type;
 -- Example
 ALTER TABLE employees
 MODIFY COLUMN salary DECIMAL(10, 2);
+
+
+
+-- 3. DROP A COLUMN
+-- Syntax:
+ALTER TABLE table_name
+DROP COLUMN column_name;
+
+-- Example:
+ALTER TABLE employees
+DROP COLUMN middle_name;
