@@ -19,3 +19,9 @@ END $$
 -- if we run it, you can see Jerry is now retired
 SELECT * 
 FROM parks_and_recreation.employee_demographics;
+
+
+-- Viewing EVENTS
+-- You can view all events in a MySQL database using the SHOW EVENTS statement or by querying the information_schema.EVENTS table.
+
+SHOW EVENTS;
