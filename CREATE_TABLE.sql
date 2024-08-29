@@ -20,3 +20,14 @@ CREATE TABLE Employees (
     HireDate DATE,
     Salary DECIMAL(10, 2) NOT NULL
 );
+
+
+-- Create Table Using Another Table:
+-- A copy of an existing table can also be created using CREATE TABLE.
+-- The new table gets the same column definitions. All columns or specific columns can be selected.
+-- If you create a new table using an existing table, the new table will be filled with the existing values from the old table.
+
+-- Example
+CREATE TABLE TestTable AS
+SELECT customername, contactname
+FROM customers;
