@@ -102,4 +102,9 @@ A ***relational database*** is a type of database that stores and organizes data
 - **Schema Rigidity** – Requires predefined structure (hard to modify later).
 - **Horizontal Scaling Challenges** – Sharding is complex (NoSQL is better for distributed systems).
 - **Performance for Unstructured Data** – JSON, graphs, and hierarchies are harder to model.
+#### Summary:
+Relational databases remain the gold standard for structured data storage due to their ACID compliance, strong querying (SQL), and data integrity. However, NoSQL databases (like MongoDB, Cassandra) are preferred for unstructured data, high scalability, and flexibility.  
 
+Every database server provides a mechanism for generating unique sets of numbers to use as primary key values, so you won’t need to worry about keeping track of what numbers have been assigned.  
+
+A primary key consisting of two or more columns is known as a **compound key**.
