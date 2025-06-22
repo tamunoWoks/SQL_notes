@@ -24,3 +24,6 @@ Organization (Root)
     ├── Employee: Charlie
     └── Employee: Dave
 ```
+- Organization is the root.
+- Departments (HR, IT) are children of Organization.
+- Employees are children of their respective departments.
