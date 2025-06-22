@@ -13,7 +13,7 @@ The SQL language is divided into several distinct parts:
 
 For example, to create a new table in your database, you would use the SQL schema statement create table, whereas the process of populating your new table with data would require the SQL data statement insert.  
 
-- Here’s an SQL schema statement that creates a table called corporation:
+- Here’s an SQL schema statement that creates a table called `corporation`:
 ```sql
 CREATE TABLE corporation
 (corp_id SMALLINT,
@@ -22,3 +22,10 @@ CONSTRAINT pk_corporation PRIMARY KEY (corp_id)
 );
 ```
 This statement creates a table with two columns, `corp_id` and `name`, with the `corp_id` column identified as the primary key for the table.
+
+- Here’s an SQL data statement that inserts a row into the `corporation` table for Acme Paper Corporation:
+```sql
+INSERT INTO corporation (corp_id, name)
+VALUES (27, 'Acme Paper Corporation');
+```
+This statement adds a row to the `corporation` table with a value of `27` for the `corp_id` column and a value of 'Acme Paper Corporation' for the `name` column.
