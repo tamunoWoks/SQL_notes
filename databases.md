@@ -31,3 +31,7 @@ Organization (Root)
 - Fast data retrieval for hierarchical queries (e.g., "Get all employees under HR").
 - Efficient storage for structured data with clear parent-child relationships.
 - Simple and predictable for certain use cases (e.g., file systems, organizational charts).
+#### Disadvantages:
+- Inflexible structure – Hard to modify relationships once defined.
+- No support for many-to-many relationships without redundancy.
+- Complex queries outside the hierarchy are inefficient.
