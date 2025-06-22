@@ -37,3 +37,6 @@ Organization (Root)
 - Complex queries outside the hierarchy are inefficient.
 #### Summary:
 Hierarchical databases are efficient for structured, predictable data with clear parent-child relationships but are largely replaced by relational and NoSQL databases for more flexible data modeling. However, they still find use in specific legacy systems and applications where hierarchy is key.
+
+### Network Database System
+A ***network database system*** is a database model that extends the hierarchical model by allowing a record to have multiple parent and child records, forming a **graph (network) structure**. This model was designed to represent more complex relationships, particularly many-to-many (M:N) relationships, which are difficult to express in a hierarchical database.
