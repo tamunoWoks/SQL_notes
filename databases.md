@@ -108,3 +108,6 @@ Relational databases remain the gold standard for structured data storage due to
 Every database server provides a mechanism for generating unique sets of numbers to use as primary key values, so you won’t need to worry about keeping track of what numbers have been assigned.  
 
 A primary key consisting of two or more columns is known as a **compound key**.
+
+### Normalization
+The process of refining a database design to ensure that each independent piece of information is in only one place (except for foreign keys) is known as **normalization**.
