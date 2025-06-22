@@ -41,4 +41,12 @@ All database elements created via SQL schema statements are stored in a special 
 as ***metadata***.
 
 ### SQL: A Nonprocedural Language
-A procedural language defines both the desired results and the mechanism, or process, by which the results are generated. **Nonprocedural languages** also define the desired results, but the process by which the results are generated is left to an external agent.
+A procedural language defines both the desired results and the mechanism, or process, by which the results are generated. **Nonprocedural languages** also define the desired results, but the process by which the results are generated is left to an external agent.  
+
+SQL statements define the necessary inputs and outputs, but the manner in which a statement is executed is left to a component of your database engine known as the ***optimizer***. The optimizer’s job is to look at your SQL statements and, taking into account how your tables are configured and what indexes are available, decide the most efficient execution path.  
+
+Therefore, with SQL, you will not be able to write complete applications. Unless you are writing a simple script to manipulate certain data, you will need to integrate SQL with your favorite programming language.
+
+Some database vendors have done this for you, such as Oracle’s PL/SQL language, MySQL’s stored procedure language, and Microsoft’s Transact-SQL language. With these languages, the SQL data statements are part of the language’s grammar, allowing you to seamlessly integrate database queries with procedural commands.  
+
+If you are using a non-database-specific language such as Java or Python, however, you will need to use a toolkit/API to execute SQL statements from your code. Some of these toolkits are provided by your database vendor, whereas others have been created by third-party vendors or by open source providers.
