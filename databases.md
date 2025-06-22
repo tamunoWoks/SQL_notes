@@ -40,3 +40,10 @@ Hierarchical databases are efficient for structured, predictable data with clear
 
 ### Network Database System
 A ***network database system*** is a database model that extends the hierarchical model by allowing a record to have multiple parent and child records, forming a **graph (network) structure**. This model was designed to represent more complex relationships, particularly many-to-many (M:N) relationships, which are difficult to express in a hierarchical database.
+#### Key Features of a Network Database System
+- **Graph Structure** – Data is organized as nodes (records) connected by edges (links/pointers).
+- **Multiple Parents & Children** – Unlike hierarchical databases, a child can have multiple parents.
+- **Owner-Member Relationships** – Records are linked using sets (an owner record and multiple member records).
+- **Pointers for Navigation** – Uses physical pointers (addresses) to traverse relationships.
+- **Schema Flexibility** – More adaptable than hierarchical but still rigid compared to relational databases.
+- **CODASYL Standard** – The Conference on Data Systems Languages (CODASYL) defined the network model in the 1960s–1970s.
