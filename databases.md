@@ -27,3 +27,7 @@ Organization (Root)
 - Organization is the root.
 - Departments (HR, IT) are children of Organization.
 - Employees are children of their respective departments.
+#### Advantages:
+- Fast data retrieval for hierarchical queries (e.g., "Get all employees under HR").
+- Efficient storage for structured data with clear parent-child relationships.
+- Simple and predictable for certain use cases (e.g., file systems, organizational charts).
