@@ -65,3 +65,8 @@ Student 3 ──── Course B ────┘
 - **Reduced Data Redundancy** – Avoids duplication by using pointers.
 - **Better Performance for Predefined Paths** – Optimized for known access patterns.
 - **More Flexible than Hierarchical** – Supports multiple relationships.
+#### Disadvantages of Network Databases:
+- **Complexity** – Hard to design and maintain due to pointer-based navigation.
+- **Rigid Schema** – Changing relationships requires restructuring.
+- **No Ad-Hoc Query Support** – Queries must follow predefined paths.
+- **Decline in Popularity** – Largely replaced by relational databases (SQL).
