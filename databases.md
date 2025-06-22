@@ -72,3 +72,6 @@ Student 3 ──── Course B ────┘
 - **Decline in Popularity** – Largely replaced by relational databases (SQL).
 #### Summary:
 The network database model was a significant improvement over hierarchical databases, allowing more complex relationships. However, its complexity and lack of flexibility led to its decline in favor of relational databases (SQL) and modern NoSQL systems. Today, it’s mostly found in legacy systems, though some concepts live on in graph databases (Neo4j, ArangoDB).
+
+### Relational Database Management System (RDBMS)
+A ***relational database*** is a type of database that stores and organizes data in structured **tables (relations)** consisting of **rows (tuples)** and **columns (attributes)**. It uses **SQL (Structured Query Language)** for defining, querying, and manipulating data while enforcing relationships between tables via **keys**.
