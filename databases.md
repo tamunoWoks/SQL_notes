@@ -98,5 +98,8 @@ A ***relational database*** is a type of database that stores and organizes data
 - **ACID Transactions** – Ensures reliability for banking, healthcare, etc.
 - **Scalability (Vertical)** – Can handle large datasets with proper indexing.
 - **Standardization (SQL)** – Widely used with strong tooling support.
-
+#### Disadvantages of Relational Databases
+- **Schema Rigidity** – Requires predefined structure (hard to modify later).
+- **Horizontal Scaling Challenges** – Sharding is complex (NoSQL is better for distributed systems).
+- **Performance for Unstructured Data** – JSON, graphs, and hierarchies are harder to model.
 
