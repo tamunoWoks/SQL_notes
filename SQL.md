@@ -11,4 +11,14 @@ The SQL language is divided into several distinct parts:
 2. **SQL data statements:** These are used to manipulate the data structures previously defined using SQL schema statements.
 3. **SQL transaction statements:** These are used to begin, end, and roll back transactions.  
 
-For example, to create a new table in your database, you would use the SQL schema statement create table, whereas the process of populating your new table with data would require the SQL data statement insert.
+For example, to create a new table in your database, you would use the SQL schema statement create table, whereas the process of populating your new table with data would require the SQL data statement insert.  
+
+- Here’s an SQL schema statement that creates a table called corporation:
+```sql
+CREATE TABLE corporation
+(corp_id SMALLINT,
+name VARCHAR(30),
+CONSTRAINT pk_corporation PRIMARY KEY (corp_id)
+);
+```
+This statement creates a table with two columns, `corp_id` and `name`, with the `corp_id` column identified as the primary key for the table.
