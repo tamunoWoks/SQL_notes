@@ -75,3 +75,21 @@ The network database model was a significant improvement over hierarchical datab
 
 ### Relational Database Management System (RDBMS)
 A ***relational database*** is a type of database that stores and organizes data in structured **tables (relations)** consisting of **rows (tuples)** and **columns (attributes)**. It uses **SQL (Structured Query Language)** for defining, querying, and manipulating data while enforcing relationships between tables via **keys**.
+#### Key Features of Relational Databases
+1. Table-Based Structure
+    - Data is stored in tables (e.g., Customers, Orders).
+    - Each table has rows (records) and columns (fields).
+2. Primary & Foreign Keys
+    - Primary Key (PK): Uniquely identifies a row (e.g., customer_id).
+    - Foreign Key (FK): Links data between tables (e.g., order.customer_id → customer.id).
+3. ACID Compliance
+    - Ensures reliable transactions:
+        - Atomicity (all or nothing),
+        - Consistency (valid transitions),
+        - Isolation (transactions don’t interfere),
+        - Durability (committed data stays saved).
+4. SQL for Queries
+    - Standardized language for CRUD operations (e.g., `SELECT`, `INSERT`, `JOIN`).
+5. Normalization
+    - Minimizes redundancy by splitting data into related tables.
+
