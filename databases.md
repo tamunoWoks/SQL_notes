@@ -47,3 +47,16 @@ A ***network database system*** is a database model that extends the hierarchica
 - **Pointers for Navigation** – Uses physical pointers (addresses) to traverse relationships.
 - **Schema Flexibility** – More adaptable than hierarchical but still rigid compared to relational databases.
 - **CODASYL Standard** – The Conference on Data Systems Languages (CODASYL) defined the network model in the 1960s–1970s.
+#### Example of a Network Database:
+Consider a university database with Students, Courses, and Professors:
+- A Student can enroll in multiple Courses.
+- A Course can be taught by multiple Professors.
+- A Professor can teach multiple Courses.  
+
+This creates a network of relationships:
+```
+Student 1 ──┐
+            ├── Course A ─── Professor X
+Student 2 ──┘               │
+Student 3 ──── Course B ────┘
+```
