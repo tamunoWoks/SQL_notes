@@ -6,3 +6,10 @@ Because a database system stores data electronically rather than on paper, a dat
 
 ### Heirarchical Database System
 A ***hierarchical database system*** is a type of database model that organizes data in a tree-like structure, where each record has a single parent or root, except for the topmost record (the root). This model represents a one-to-many (1:N) relationship between data elements.
+#### Key Features of a Hierarchical Database System:
+1. **Tree Structure** – Data is arranged in a parent-child hierarchy.
+2. **Single Parent Rule** – Each child record has only one parent, but a parent can have multiple children.
+3. **Root Node** – The topmost node (root) has no parent.
+4. **Pointers for Navigation** – Parent-child relationships are maintained using pointers.
+5. **Fast Access for Known Paths** – Efficient for queries that follow the hierarchy.
+6. **Limited Flexibility** – Difficult to represent many-to-many (M:N) relationships.
