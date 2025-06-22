@@ -92,4 +92,11 @@ A ***relational database*** is a type of database that stores and organizes data
     - Standardized language for CRUD operations (e.g., `SELECT`, `INSERT`, `JOIN`).
 5. Normalization
     - Minimizes redundancy by splitting data into related tables.
+#### Advantages of Relational Databases
+- **Data Integrity** – Enforces constraints (e.g., NOT NULL, UNIQUE).
+- **Flexible Queries** – Supports complex joins and aggregations.
+- **ACID Transactions** – Ensures reliability for banking, healthcare, etc.
+- **Scalability (Vertical)** – Can handle large datasets with proper indexing.
+- **Standardization (SQL)** – Widely used with strong tooling support.
+
 
