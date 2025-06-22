@@ -29,3 +29,10 @@ INSERT INTO corporation (corp_id, name)
 VALUES (27, 'Acme Paper Corporation');
 ```
 This statement adds a row to the `corporation` table with a value of `27` for the `corp_id` column and a value of 'Acme Paper Corporation' for the `name` column.
+
+- Finally, here’s a simple select statement to retrieve the data that was just created:
+```sql
+SELECT name
+FROM corporation
+WHERE corp_id = 27;
+```
