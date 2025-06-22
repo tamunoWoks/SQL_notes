@@ -50,3 +50,5 @@ Therefore, with SQL, you will not be able to write complete applications. Unless
 Some database vendors have done this for you, such as Oracle’s PL/SQL language, MySQL’s stored procedure language, and Microsoft’s Transact-SQL language. With these languages, the SQL data statements are part of the language’s grammar, allowing you to seamlessly integrate database queries with procedural commands.  
 
 If you are using a non-database-specific language such as Java or Python, however, you will need to use a toolkit/API to execute SQL statements from your code. Some of these toolkits are provided by your database vendor, whereas others have been created by third-party vendors or by open source providers.
+
+**NOTE:** Most SQL implementations treat any text between the /* and */ tags as comments.
