@@ -35,3 +35,5 @@ Organization (Root)
 - Inflexible structure – Hard to modify relationships once defined.
 - No support for many-to-many relationships without redundancy.
 - Complex queries outside the hierarchy are inefficient.
+#### Summary:
+Hierarchical databases are efficient for structured, predictable data with clear parent-child relationships but are largely replaced by relational and NoSQL databases for more flexible data modeling. However, they still find use in specific legacy systems and applications where hierarchy is key.
