@@ -39,3 +39,6 @@ WHERE corp_id = 27;
 **NOTE:**  
 All database elements created via SQL schema statements are stored in a special set of tables called the **data dictionary**. This “data about the database” is known collectively
 as ***metadata***.
+
+### SQL: A Nonprocedural Language
+A procedural language defines both the desired results and the mechanism, or process, by which the results are generated. **Nonprocedural languages** also define the desired results, but the process by which the results are generated is left to an external agent.
