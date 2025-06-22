@@ -51,4 +51,18 @@ Some database vendors have done this for you, such as Oracle’s PL/SQL language
 
 If you are using a non-database-specific language such as Java or Python, however, you will need to use a toolkit/API to execute SQL statements from your code. Some of these toolkits are provided by your database vendor, whereas others have been created by third-party vendors or by open source providers.
 
-**NOTE:** Most SQL implementations treat any text between the /* and */ tags as comments.
+**NOTE:**  
+- Most SQL implementations treat any text between the /* and */ tags as comments.
+- When constructing your query, your first task is generally to determine which table or tables will be needed and then add them to your from clause. Next, you will need to add conditions to your where clause to filter out the data from these tables that you aren’t interested in. Finally, you will decide which columns from the different tables need to be retrieved and add them to your select clause.
+- Along with querying your database, you will most likely be involved with populating and modifying the data in your database. Here’s a simple example of how you would insert a new row into the product table:
+```sql
+INSERT INTO product (product_cd, name)
+VALUES ('CD', 'Certificate of Depysit')
+```
+Whoops, looks like you misspelled “Deposit.” No problem. You can clean that up with an update statement:
+```sql
+UPDATE product
+SET name = 'Certificate of Deposit'
+WHERE product_cd = 'CD';
+```
+Notice that the update statement also contains a where clause, just like the select statement. This is because an update statement must identify the rows to be modified; in this case, you are specifying that only those rows whose product_cd column matches the string 'CD' should be modified.
