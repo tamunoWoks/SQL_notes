@@ -70,3 +70,5 @@ Student 3 ──── Course B ────┘
 - **Rigid Schema** – Changing relationships requires restructuring.
 - **No Ad-Hoc Query Support** – Queries must follow predefined paths.
 - **Decline in Popularity** – Largely replaced by relational databases (SQL).
+#### Summary:
+The network database model was a significant improvement over hierarchical databases, allowing more complex relationships. However, its complexity and lack of flexibility led to its decline in favor of relational databases (SQL) and modern NoSQL systems. Today, it’s mostly found in legacy systems, though some concepts live on in graph databases (Neo4j, ArangoDB).
