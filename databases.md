@@ -60,3 +60,8 @@ Student 1 ──┐
 Student 2 ──┘               │
 Student 3 ──── Course B ────┘
 ```
+#### Advantages of Network Databases:
+- **Efficient for Complex Queries** – Faster than hierarchical for M:N relationships.
+- **Reduced Data Redundancy** – Avoids duplication by using pointers.
+- **Better Performance for Predefined Paths** – Optimized for known access patterns.
+- **More Flexible than Hierarchical** – Supports multiple relationships.
