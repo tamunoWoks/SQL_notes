@@ -13,3 +13,14 @@ A ***hierarchical database system*** is a type of database model that organizes 
 4. **Pointers for Navigation** – Parent-child relationships are maintained using pointers.
 5. **Fast Access for Known Paths** – Efficient for queries that follow the hierarchy.
 6. **Limited Flexibility** – Difficult to represent many-to-many (M:N) relationships.
+#### Example of a Hierarchical Database:
+Consider an organization's structure:
+```
+Organization (Root)
+├── Department: HR
+│   ├── Employee: Alice
+│   └── Employee: Bob
+└── Department: IT
+    ├── Employee: Charlie
+    └── Employee: Dave
+```
