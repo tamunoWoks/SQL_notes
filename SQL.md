@@ -36,3 +36,6 @@ SELECT name
 FROM corporation
 WHERE corp_id = 27;
 ```
+**NOTE:**  
+All database elements created via SQL schema statements are stored in a special set of tables called the **data dictionary**. This “data about the database” is known collectively
+as ***metadata***.
