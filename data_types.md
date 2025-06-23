@@ -9,7 +9,6 @@ When defining a character column, you must specify the maximum size of any strin
 char(20) /* fixed-length */
 varchar(20) /* variable-length */
 ```
-The maximum length for char columns is currently 255 bytes, whereas varchar columns
-can be up to 65,535 bytes. If you need to store longer strings (such as emails, XML documents, etc.), then you will want to use one of the text types (mediumtext and longtext), which I cover later in this section. In general, you should use the char type when all strings to be stored in the column are of the same length, such as state abbreviations, and the varchar type when strings to be stored in the column are of varying lengths.  
+The maximum length for `char` columns is currently 255 bytes, whereas `varchar` columns can be up to 65,535 bytes. If you need to store longer strings (such as emails, XML documents, etc.), then you will want to use one of the text types (mediumtext and longtext).  
 
-Both char and varchar are used in a similar fashion in all the major database servers.
+You should use the `char` type when all strings to be stored in the column are of the same length, such as state abbreviations, and the `varchar` type when strings to be stored in the column are of varying lengths. Both `char` and `varchar` are used in a similar fashion in all the major database servers.
