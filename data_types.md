@@ -67,3 +67,13 @@ SHOW CHARACTER SET;
 If the value in the fourth column, maxlen, is greater than 1, then the character set is a multibyte character set.  
 In prior versions of the MySQL server, the latin1 character set was automatically chosen as the default character set, but version 8 defaults to utf8mb4. However, you
 may choose to use a different character set for each character column in your  database, and you can even store different character sets within the same table.
+
+### 
+If you need to store data that might exceed the 64 KB limit for varchar columns, you will need to use one of the text types.
+| Text type | Maximum no. of bytes |
+|:----------|:---------------------|
+|tinytext   | 255                  |
+|text       | 65,535               |
+|mediumtext | 16,777,215           |
+|longtext   | 4,294,967,295        |  
+
