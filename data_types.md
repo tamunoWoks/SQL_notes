@@ -68,7 +68,7 @@ If the value in the fourth column, maxlen, is greater than 1, then the character
 In prior versions of the MySQL server, the latin1 character set was automatically chosen as the default character set, but version 8 defaults to utf8mb4. However, you
 may choose to use a different character set for each character column in your  database, and you can even store different character sets within the same table.
 
-### 
+### Text Data
 If you need to store data that might exceed the 64 KB limit for varchar columns, you will need to use one of the text types.
 | Text type | Maximum no. of bytes |
 |:----------|:---------------------|
@@ -77,3 +77,13 @@ If you need to store data that might exceed the 64 KB limit for varchar columns,
 |mediumtext | 16,777,215           |
 |longtext   | 4,294,967,295        |  
 
+When choosing to use one of the text types, you should be aware of the following:
+- If the data being loaded into a text column exceeds the maximum size for that type, the data will be truncated.
+- Trailing spaces will not be removed when data is loaded into the column.
+- When using text columns for sorting or grouping, only the first 1,024 bytes are
+used, although this limit may be increased if necessary.
+- The different text types are unique to MySQL. SQL Server has a single text type for large character data, whereas DB2 and Oracle use a data type called clob, for
+Character Large Object.
+- Now that MySQL allows up to 65,535 bytes for varchar columns (it was limited to 255 bytes in version 4), there isn’t any particular need to use the tinytext or text type.
+
+If you are creating a column for free-form data entry, such as a notes column to hold data about customer interactions with your company’s customer service department, then varchar will probably be adequate. If you are storing documents, however, you should choose either the mediumtext or longtext type.
