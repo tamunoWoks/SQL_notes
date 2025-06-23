@@ -62,4 +62,8 @@ SHOW CHARACTER SET;
 |utf16le |UTF-16LE Unicode               |utf16le_general_ci |4     |
 |utf32   |UTF-32 Unicode                 |utf32_general_ci   |4     |
 |utf8mb3 |UTF-8 Unicode                  |utf8mb3_general_ci |3     |
-|utf8mb4 |UTF-8 Unicode                  |utf8mb4_0900_ai_ci |4     |
+|utf8mb4 |UTF-8 Unicode                  |utf8mb4_0900_ai_ci |4     |  
+
+If the value in the fourth column, maxlen, is greater than 1, then the character set is a multibyte character set.  
+In prior versions of the MySQL server, the latin1 character set was automatically chosen as the default character set, but version 8 defaults to utf8mb4. However, you
+may choose to use a different character set for each character column in your  database, and you can even store different character sets within the same table.
