@@ -111,4 +111,11 @@ When specifying one of these types, you may also specify that the data is unsign
 | int       | −2,147,483,648 to 2,147,483,647 | 0 to 4,294,967,295 |
 | bigint    | −2^63 to 2^63 - 1               | 0 to 2^64 - 1      |
 
-When you create a column using one of the integer types, MySQL will allocate an appropriate amount of space to store the data, which ranges from one byte for a tinyint to eight bytes for a bigint. Therefore, you should try to choose a type that will be large enough to hold the biggest number you can envision being stored in the column without needlessly wasting storage space.
+When you create a column using one of the integer types, MySQL will allocate an appropriate amount of space to store the data, which ranges from one byte for a tinyint to eight bytes for a bigint. Therefore, you should try to choose a type that will be large enough to hold the biggest number you can envision being stored in the column without needlessly wasting storage space.  
+
+For floating-point numbers (such as 3.1415927), you may choose from the numeric types shown below:
+#### MySQL floating-point types
+| Type | Numeric range |
+|:-----|:--------------|
+| float( p , s ) | −3.402823466E+38 to −1.175494351E-38 and 1.175494351E-38 to 3.402823466E+38 |
+| double( p , s ) | −1.7976931348623157E+308 to −2.2250738585072014E-308 and 2.2250738585072014E-308 to 1.7976931348623157E+308 |
