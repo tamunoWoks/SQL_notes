@@ -110,3 +110,5 @@ When specifying one of these types, you may also specify that the data is unsign
 | mediumint | −8,388,608 to 8,388,607         | 0 to 16,777,215    |
 | int       | −2,147,483,648 to 2,147,483,647 | 0 to 4,294,967,295 |
 | bigint    | −2^63 to 2^63 - 1               | 0 to 2^64 - 1      |
+
+When you create a column using one of the integer types, MySQL will allocate an appropriate amount of space to store the data, which ranges from one byte for a tinyint to eight bytes for a bigint. Therefore, you should try to choose a type that will be large enough to hold the biggest number you can envision being stored in the column without needlessly wasting storage space.
