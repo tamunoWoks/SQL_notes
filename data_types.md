@@ -92,3 +92,9 @@ If you are creating a column for free-form data entry, such as a notes column to
 There are several different numeric data types that reflect the various ways in which numbers are used, as illustrated here:  
 - *A column indicating whether a customer order has been shipped.*
   - This type of column, referred to as a **Boolean**, would contain a 0 to indicate false and a 1 to indicate true.
+- *A system-generated primary key for a transaction table.*
+  - This data would generally start at 1 and increase in increments of one up to a potentially very large number.
+- *An item number for a customer’s electronic shopping basket.*
+  - The values for this type of column would be positive whole numbers between 1 and, perhaps, 200 (for shopaholics).
+- *Positional data for a circuit board drill machine.*
+  - High-precision scientific or manufacturing data often requires accuracy to eight decimal points.
