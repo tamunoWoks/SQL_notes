@@ -115,7 +115,7 @@ When you create a column using one of the integer types, MySQL will allocate an 
 
 For floating-point numbers (such as 3.1415927), you may choose from the numeric types shown below:
 #### MySQL floating-point types
-| Type | Numeric range |
-|:-----|:--------------|
-| float( p , s ) | −3.402823466E+38 to −1.175494351E-38 and 1.175494351E-38 to 3.402823466E+38 |
+| Type  | Numeric range |
+|:------|:--------------|
+| float( p , s )  | −3.402823466E+38 to −1.175494351E-38 and 1.175494351E-38 to 3.402823466E+38 |
 | double( p , s ) | −1.7976931348623157E+308 to −2.2250738585072014E-308 and 2.2250738585072014E-308 to 1.7976931348623157E+308 |
