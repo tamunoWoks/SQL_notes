@@ -101,3 +101,12 @@ There are several different numeric data types that reflect the various ways in 
 
 To handle these types of data there are several numeric data types. The most commonly used numeric types are those used to store whole numbers, or integers.  
 When specifying one of these types, you may also specify that the data is unsigned, which tells the server that all data stored in the column will be greater than or equal to zero.
+
+#### MySQL Integer Types
+| Type      | Signed range                    | Unsigned range     |
+|:----------|:--------------------------------|:-------------------|
+| tinyint   | −128 to 127                     | 0 to 255           |
+| smallint  | −32,768 to 32,767               | 0 to 65,535        |
+| mediumint | −8,388,608 to 8,388,607         | 0 to 16,777,215    |
+| int       | −2,147,483,648 to 2,147,483,647 | 0 to 4,294,967,295 |
+| bigint    | −2^63 to 2^63 - 1               | 0 to 2^64 - 1      |
