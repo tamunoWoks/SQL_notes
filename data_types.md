@@ -89,4 +89,6 @@ Character Large Object.
 If you are creating a column for free-form data entry, such as a notes column to hold data about customer interactions with your company’s customer service department, then varchar will probably be adequate. If you are storing documents, however, you should choose either the mediumtext or longtext type.
 
 ### Numeric Data 
-There are several different numeric data types that reflect the various ways in which numbers are used, as illustrated here:
+There are several different numeric data types that reflect the various ways in which numbers are used, as illustrated here:  
+*A column indicating whether a customer order has been shipped*
+  - This type of column, referred to as a **Boolean**, would contain a 0 to indicate false and a 1 to indicate true.
