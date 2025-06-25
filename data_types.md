@@ -97,4 +97,7 @@ There are several different numeric data types that reflect the various ways in 
 - *An item number for a customer’s electronic shopping basket.*
   - The values for this type of column would be positive whole numbers between 1 and, perhaps, 200 (for shopaholics).
 - *Positional data for a circuit board drill machine.*
-  - High-precision scientific or manufacturing data often requires accuracy to eight decimal points.
+  - High-precision scientific or manufacturing data often requires accuracy to eight decimal points.  
+
+To handle these types of data there are several numeric data types. The most commonly used numeric types are those used to store whole numbers, or integers.  
+When specifying one of these types, you may also specify that the data is unsigned, which tells the server that all data stored in the column will be greater than or equal to zero.
