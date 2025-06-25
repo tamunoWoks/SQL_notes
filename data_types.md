@@ -90,5 +90,4 @@ If you are creating a column for free-form data entry, such as a notes column to
 
 ### Numeric Data 
 There are several different numeric data types that reflect the various ways in which numbers are used, as illustrated here:  
-*A column indicating whether a customer order has been shipped*
-  - This type of column, referred to as a **Boolean**, would contain a 0 to indicate false and a 1 to indicate true.
+**Boolean:** A boolean would contain a 0 to indicate false and a 1 to indicate true. Eg; *A column indicating whether a customer order has been shipped*.  
