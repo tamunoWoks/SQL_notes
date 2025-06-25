@@ -87,3 +87,6 @@ Character Large Object.
 - Now that MySQL allows up to 65,535 bytes for varchar columns (it was limited to 255 bytes in version 4), there isn’t any particular need to use the tinytext or text type.
 
 If you are creating a column for free-form data entry, such as a notes column to hold data about customer interactions with your company’s customer service department, then varchar will probably be adequate. If you are storing documents, however, you should choose either the mediumtext or longtext type.
+
+### Numeric Data 
+There are several different numeric data types that reflect the various ways in which numbers are used, as illustrated here:
