@@ -142,3 +142,6 @@ line.
 | timestamp | YYYY-MM-DD HH:MI:SS | 1970-01-01 00:00:00.000000 to 2038-01-18 22:14:07.999999 |
 | year | YYYY | 1901 to 2155 |
 | time | HHH:MI:SS | −838:59:59.000000 to 838:59:59.000000 |
+
+The purpose of a format string is to show how the data will be represented when retrieved, along with how a date string should be constructed when inserting or updating a temporal column.  
+The `datetime`, `timestamp`, and `time` types also allow fractional seconds of up to 6 decimal places (microseconds). When defining columns using one of these data types, you may supply a value from 0 to 6; for example, specifying `datetime(2)` would allow your time values to include hundredths of a second.
