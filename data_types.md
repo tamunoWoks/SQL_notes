@@ -145,3 +145,14 @@ line.
 
 The purpose of a format string is to show how the data will be represented when retrieved, along with how a date string should be constructed when inserting or updating a temporal column.  
 The `datetime`, `timestamp`, and `time` types also allow fractional seconds of up to 6 decimal places (microseconds). When defining columns using one of these data types, you may supply a value from 0 to 6; for example, specifying `datetime(2)` would allow your time values to include hundredths of a second.
+
+#### Date format components
+| Component | Definition | Range |
+|:----------|:-----------|:------|
+| YYYY | Year, including century | 1000 to 9999 |
+| MM | Month  01 (January) to 12 (December) 
+| DD | Day | 01 to 31 |
+| HH | Hour | 00 to 23 |
+| HHH | Hours (elapsed) | −838 to 838 |
+| MI | Minute | 00 to 59 |
+| SS | Second | 00 to 59 |
