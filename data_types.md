@@ -122,4 +122,14 @@ For floating-point numbers (such as 3.1415927), you may choose from the numeric 
 
 When using a floating-point type, you can specify a precision (the total number of allowable digits both to the left and to the right of the decimal point) and a scale (the number of allowable digits to the right of the decimal point), but they are not required.  
 These values are represented in the above table as p and s. If you specify a precision and scale for your floating-point column, remember that the data stored in the column will be rounded if the number of digits exceeds the scale and/or precision of the column. For example, a column defined as float(4,2) will store a total of four digits, two to the left of the decimal and two to the right of the decimal. Therefore, such a column would handle the numbers 27.44 and 8.19 just fine, but the number 17.8675 would be rounded to 17.87, and attempting to store the number 178.375 in your float(4,2) column would generate an error.  
-Like the integer types, floating-point columns can be defined as unsigned, but this designation only prevents negative numbers from being stored in the column rather than altering the range of data that may be stored in the column.
+Like the integer types, floating-point columns can be defined as unsigned, but this designation only prevents negative numbers from being stored in the column rather than altering the range of data that may be stored in the column.  
+
+### Temporal Data
+Along with strings and numbers, you will almost certainly be working with information about dates and/or times. This type of data is referred to as temporal, and some examples of temporal data in a database include:
+- The future date that a particular event is expected to happen, such as shipping a customer’s order
+- The date that a customer’s order was shipped
+- The date and time that a user modified a particular row in a table
+- An employee’s birth date
+- The year corresponding to a row in a `yearly_sales` fact table in a data warehouse
+- The elapsed time needed to complete a wiring harness on an automobile assembly
+line.  
