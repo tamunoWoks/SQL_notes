@@ -132,4 +132,13 @@ Along with strings and numbers, you will almost certainly be working with inform
 - An employee’s birth date
 - The year corresponding to a row in a `yearly_sales` fact table in a data warehouse
 - The elapsed time needed to complete a wiring harness on an automobile assembly
-line.  
+line.   
+
+#### MySQL temporal types
+| Type | Default format | Allowable values |
+|:-----|:---------------|:-----------------|
+| date | YYYY-MM-DD | 1000-01-01 to 9999-12-31 |
+| datetime | YYYY-MM-DD HH:MI:SS | 1000-01-01 00:00:00.000000 to 9999-12-31 23:59:59.999999 |
+| timestamp | YYYY-MM-DD HH:MI:SS | 1970-01-01 00:00:00.000000 to 2038-01-18 22:14:07.999999 |
+| year | YYYY | 1901 to 2155 |
+| time | HHH:MI:SS | −838:59:59.000000 to 838:59:59.000000 |
